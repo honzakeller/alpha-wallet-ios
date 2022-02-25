@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>NO_OF_DAYS</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@days@</string>
+		<key>days</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>one</key>
+			<string>%d day</string>
+			<key>other</key>
+			<string>%d days</string>
+		</dict>
+	</dict>
+	<key>NO_OF_INFANTS</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@infants@</string>
+		<key>infants</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>one</key>
+			<string>%d infant</string>
+			<key>other</key>
+			<string>%d infants</string>
+		</dict>
+	</dict>
+	<key>NO_OF_CHILDREN</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@children@</string>
+		<key>children</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>one</key>
+			<string>%d child</string>
+			<key>other</key>
+			<string>%d children</string>
+		</dict>
+	</dict>
+	<key>NO_OF_YOUNGSTERS</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@youngsters@</string>
+		<key>youngsters</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>one</key>
+			<string>%d youngster</string>
+			<key>other</key>
+			<string>%d youngsters</string>
+		</dict>
+	</dict>
+	<key>NO_OF_ADULTS</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@adults@</string>
+		<key>adults</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>one</key>
+			<string>%d adult</string>
+			<key>other</key>
+			<string>%d adults</string>
+		</dict>
+	</dict>
+	<key>NO_OF_PERSONS</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@persons@</string>
+		<key>persons</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>one</key>
+			<string>%d person</string>
+			<key>other</key>
+			<string>%d people</string>
+		</dict>
+	</dict>
+    <key>FOR_NO_OF_PERSONS</key>
+    <dict>
+        <key>NSStringLocalizedFormatKey</key>
+        <string>%#@persons@</string>
+        <key>persons</key>
+        <dict>
+            <key>NSStringFormatSpecTypeKey</key>
+            <string>NSStringPluralRuleType</string>
+            <key>NSStringFormatValueTypeKey</key>
+            <string>d</string>
+            <key>one</key>
+            <string>%d person</string>
+            <key>other</key>
+            <string>%d people</string>
+        </dict>
+    </dict>
+	<key>NO_OF_RESULTS</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@results@</string>
+		<key>results</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>one</key>
+			<string>%d result</string>
+			<key>other</key>
+			<string>%d results</string>
+		</dict>
+	</dict>
+	<key>FLIGHT_STOPS</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@stops@</string>
+		<key>stops</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>one</key>
+			<string>%d stop</string>
+			<key>other</key>
+			<string>%d stops</string>
+		</dict>
+	</dict>
+    <key>YEARS</key>
+    <dict>
+        <key>NSStringLocalizedFormatKey</key>
+        <string>%#@years@</string>
+        <key>years</key>
+        <dict>
+            <key>NSStringFormatSpecTypeKey</key>
+            <string>NSStringPluralRuleType</string>
+            <key>NSStringFormatValueTypeKey</key>
+            <string>d</string>
+            <key>one</key>
+            <string>%d year</string>
+            <key>other</key>
+            <string>%d years</string>
+        </dict>
+    </dict>
+    <key>NO_OF_PASSENGERS</key>
+    <dict>
+        <key>NSStringLocalizedFormatKey</key>
+        <string>%#@passengers@</string>
+        <key>passengers</key>
+        <dict>
+            <key>NSStringFormatSpecTypeKey</key>
+            <string>NSStringPluralRuleType</string>
+            <key>NSStringFormatValueTypeKey</key>
+            <string>d</string>
+            <key>one</key>
+            <string>%d passenger</string>
+            <key>other</key>
+            <string>%d passengers</string>
+        </dict>
+    </dict>
+    <key>ACTIVE_FILTERS</key>
+    <dict>
+        <key>NSStringLocalizedFormatKey</key>
+        <string>%#@active_filters@</string>
+        <key>active_filters</key>
+        <dict>
+            <key>NSStringFormatSpecTypeKey</key>
+            <string>NSStringPluralRuleType</string>
+            <key>NSStringFormatValueTypeKey</key>
+            <string>d</string>
+            <key>one</key>
+            <string>%d active filter</string>
+            <key>other</key>
+            <string>%d active filters</string>
+        </dict>
+    </dict>
+    <key>FLIGHT_DEALS</key>
+    <dict>
+        <key>NSStringLocalizedFormatKey</key>
+        <string>%#@flight_deals@</string>
+        <key>flight_deals</key>
+        <dict>
+            <key>NSStringFormatSpecTypeKey</key>
+            <string>NSStringPluralRuleType</string>
+            <key>NSStringFormatValueTypeKey</key>
+            <string>d</string>
+            <key>one</key>
+            <string>%d flight deal</string>
+            <key>other</key>
+            <string>%d flight deals</string>
+        </dict>
+    </dict>
+</dict>
+</plist>
