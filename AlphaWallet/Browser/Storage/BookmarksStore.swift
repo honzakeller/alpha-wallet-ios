@@ -12,8 +12,24 @@ final class BookmarksStore {
 
     init(realm: Realm) {
         self.realm = realm
+
+        if !UserDefaults.standard.bool(forKey: "defaultBookmarksCreated") {
+            createDefaultBookmarks()
+            UserDefaults.standard.set(true, forKey: "defaultBookmarksCreated")
+        }
     }
 
+    private func createDefaultBookmarks() {
+        let bookmarks = [Bookmark(url: "https://app.orion.money", title: "Orion.Money"),
+                         Bookmark(url: "https://stake.lido.fi", title: "Lido - Stake Ether"),
+                         Bookmark(url: "https://www.tokensets.com/explore", title: "TokenSets"),
+                         Bookmark(url: "https://cvi.finance/platform", title: "Crypto Volatility Index"),
+                         Bookmark(url: "https://app.cozy.finance/protected-invest", title: "Protected Investing"),
+                         Bookmark(url: "https://opensea.io/assets", title: "OpenSea - Browse NFTs")]
+
+        add(bookmarks: bookmarks)
+    }
+   
     private func findOriginalBookmarks(matchingBookmarks bookmarksToFind: [Bookmark]) -> [Bookmark] {
         var originals = [Bookmark]()
         for toDelete in bookmarksToFind {
