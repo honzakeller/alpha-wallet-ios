@@ -1,15 +1,12 @@
 {
   "images" : [
     {
-      "filename" : "category.pdf",
-      "idiom" : "universal"
+      "idiom" : "universal",
+      "filename" : "category.pdf"
     }
   ],
   "info" : {
-    "author" : "xcode",
-    "version" : 1
-  },
-  "properties" : {
-      "preserves-vector-representation" : true
+    "version" : 1,
+    "author" : "xcode"
   }
 }
