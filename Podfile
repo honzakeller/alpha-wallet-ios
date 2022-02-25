@@ -2,7 +2,7 @@ platform :ios, '13.0'
 inhibit_all_warnings!
 source 'https://cdn.cocoapods.org/'
 
-target 'AlphaWallet' do
+target 'Keyoro' do
   use_frameworks!
   pod 'BigInt', '~> 3.1'
   pod 'R.swift'
@@ -41,6 +41,7 @@ target 'AlphaWallet' do
   pod 'Apollo' 
   pod 'MailchimpSDK'
   pod 'xcbeautify'
+  pod 'PeliLibrary', :path => '../PeliLibrary'
   
   target 'AlphaWalletTests' do
       inherit! :search_paths

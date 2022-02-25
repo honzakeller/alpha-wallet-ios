@@ -82,14 +82,14 @@ struct Colors {
     static let black = UIColor(hex: "313849")
     static let lightBlack = UIColor(hex: "313849")
     static let appBackground = UIColor.white
-    static let appTint = R.color.azure()!
+    static let appTint = UIColor(hex: "5F4B8B")
     static let navigationTitleColor = UIColor.black
-    static let navigationButtonTintColor = R.color.mine()!
+    static let navigationButtonTintColor = UIColor(hex: "5F4B8B")
     static let appWhite = UIColor.white
-    static let appText = R.color.black()!
+    static let appText = UIColor(red: 47, green: 47, blue: 47)
     static let appSubtitle = UIColor(red: 117, green: 117, blue: 117)
     static let appHighlightGreen = UIColor(red: 117, green: 185, blue: 67)
-    static let appActionButtonGreen = UIColor(red: 105, green: 200, blue: 0)
+    static let appActionButtonGreen = UIColor(hex: "5F4B8B")
     static let disabledActionButton = UIColor(hex: "d7ebc8")
     static let appActionButtonShadow = UIColor.clear
     static let appGreenContrastBackground = UIColor(red: 86, green: 153, blue: 8)
@@ -103,6 +103,8 @@ struct Colors {
     static let loadingIndicatorBorder = UIColor(red: 237, green: 237, blue: 237)
     static let sortByTextColor = UIColor(red: 51, green: 51, blue: 51)
 }
+
+
 
 struct StyleLayout {
     static let sideMargin: CGFloat = 15

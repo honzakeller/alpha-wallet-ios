@@ -25,7 +25,7 @@ final class BrowserViewController: UIViewController {
         static let estimatedProgress = "estimatedProgress"
         static let developerExtrasEnabled = "developerExtrasEnabled"
         static let URL = "URL"
-        static let ClientName = "AlphaWallet"
+        static let ClientName = "Keyoro"
     }
 
     private lazy var userClient: String = {
