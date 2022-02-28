@@ -41,6 +41,10 @@ target 'Keyoro' do
   pod 'Apollo' 
   pod 'MailchimpSDK'
   pod 'xcbeautify'
+  pod 'Firebase/Analytics'
+  pod 'Firebase/RemoteConfig'
+  pod 'Firebase/Crashlytics'
+  pod 'Firebase/Messaging'
   pod 'PeliLibrary', :path => '../PeliLibrary'
   
   target 'AlphaWalletTests' do

@@ -4,6 +4,10 @@ import AWSSNS
 import AWSCore
 import PromiseKit
 
+import PeliLibrary
+import Firebase
+import FirebaseMessaging
+
 import UserNotifications
 
 @UIApplicationMain
@@ -44,6 +48,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
         } catch {
 
         }
+        
+        initPeliModules()
+        //customizeAppearence()
+        configureNotifications()
+        protectionCoordinator.didFinishLaunchingWithOptions()
+        
+        processLaunchOptions(launchOptions)
+        
         protectionCoordinator.didFinishLaunchingWithOptions()
 
         return true
@@ -56,6 +68,103 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
         completionHandler(true)
     }
 
+    private func processLaunchOptions(_ options: [UIApplication.LaunchOptionsKey: Any]?) {
+       guard let options = options else { return }
+       
+       if let userInfo = options[UIApplication.LaunchOptionsKey.remoteNotification] as? [AnyHashable: Any] {
+           NotificationManager.standard.shouldDeferHandling = true
+           
+           Messaging.messaging().appDidReceiveMessage(userInfo)
+           
+           if let topController = UIApplication.shared.delegate?.topMostController {
+               NotificationManager.standard.handleNotification(with: userInfo, presentOver: topController)
+           }
+       }
+   }
+
+   private func initPeliModules() {
+       RemoteConfig.shared.projectUid = "74311500-9130-11eb-a8b3-0242ac130003"
+       Database.shared.prepare(loadFromBundles: [Bundle(for: Article.self)])
+       
+       window = UIWindow(frame: UIScreen.main.bounds)
+       window?.backgroundColor = .peliBackground
+       window?.tintColor = Colors.appTint
+       window?.rootViewController = UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController()
+       window?.makeKeyAndVisible()
+       
+       SVProgressHUD.setContainerView(window)
+       
+       configureFonts()
+       registerImages()
+   }
+   
+   open func configureFonts() {
+       FontManager.shared.setFonts(boldFont: Fonts.bold(size: 20),
+                                   semiboldFont: Fonts.semibold(size: 20),
+                                   standardFont: Fonts.regular(size: 20))
+   }
+   
+   private func registerImages() {
+       let appBundle = Bundle(for: PeliBaseBundle.self)
+       
+       let manager = ImagesManager.shared
+       
+       manager.register(image: UIImage(named: "keyoro_logo", in: appBundle, compatibleWith: nil)!, forKey: .loading)
+       manager.register(image: UIImage(named: "keyoro_noInternet")!, forKey: .noConnection)
+       manager.register(image: UIImage(named: "keyoro_direction")!, forKey: .genericError)
+       manager.register(image: UIImage(named: "keyoro_search")!, forKey: .noResults)
+       manager.register(image: UIImage(named: "keyoro_bagagge", in: appBundle, compatibleWith: nil)!, forKey: .noFlightsAvailable)
+//        manager.register(image: UIImage(named: "keyoro_flight")!, forKey: .noFlightResults)
+       manager.register(image: UIImage(namedInArticles: "keyoro_review")!, forKey: .ratingDialog)
+//        manager.register(image: UIImage(named: "keyoro_tickets")!, forKey: .paymentSuccess)
+//        manager.register(image: UIImage(named: "keyoro_plane")!, forKey: .reservationCreated)
+       manager.register(image: UIImage(named: "keyoro_notification", in: appBundle, compatibleWith: nil)!, forKey: .notificationsOnboarding)
+       manager.register(image: UIImage(named: "pelican_on_suitcase", in: appBundle, compatibleWith: nil)!, forKey: .noSavedArticles)
+       manager.register(image: UIImage(named: "keyoro_notification", in: appBundle, compatibleWith: nil)!, forKey: .noNotifications)
+//        manager.register(image: UIImage(named: "pelican_support")!, forKey: .callMeDialog)
+       manager.register(image: UIImage(namedInArticles: "keyoro_plane")!, forKey: .creatingReservation)
+    }
+
+    private func configureNotifications() {
+        NotificationManager.standard.customHandler = self
+        
+        let authOptions: UNAuthorizationOptions = [.alert, .badge, .sound]
+                UNUserNotificationCenter.current().requestAuthorization(
+                    options: authOptions,
+                    completionHandler: { (success, error) in
+                        if error == nil {
+                            if success {
+                                print("Notification permission granted")
+                                DispatchQueue.main.async {
+                                    let application = UIApplication.shared
+                                    application.registerForRemoteNotifications()
+                                }
+                            } else {
+                                print("Notification permission denied")
+                            }
+                        } else {
+                            print(error)
+                        }
+                    }
+                )
+        
+        Messaging.messaging().delegate = self
+        
+        #if DEBUG
+        Messaging.messaging().subscribe(toTopic: "/topics/debug") { error in
+            if let error = error {
+                print(error)
+            }
+        }
+        #endif
+        
+        Messaging.messaging().subscribe(toTopic: "/topics/keyoro") { error in
+            if let error = error {
+                print(error)
+            }
+        }
+    }
+    
     private func cognitoRegistration() {
         // Override point for customization after application launch.
         /// Setup AWS Cognito credentials
@@ -184,3 +293,61 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
     }
 }
 
+extension AppDelegate: MessagingDelegate {
+    func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+        Messaging.messaging().apnsToken = deviceToken
+        
+        print("🚨 Registered for remote notifications")
+    }
+
+    func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {
+        print("Failed to register: \(error)")
+    }
+    
+    func messaging(_ messaging: Messaging, didReceiveRegistrationToken fcmToken: String?) {
+        if let token = fcmToken {
+            print("FCM token: \(token)")
+        }
+    }
+}
+
+
+extension PushNotificationsCoordinator: UNUserNotificationCenterDelegate {
+    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+        let userInfo = notification.request.content.userInfo
+        
+        print("User notification center notification")
+        print(userInfo)
+        
+        Messaging.messaging().appDidReceiveMessage(userInfo)
+            
+        if #available(iOS 14.0, *) {
+            completionHandler([.sound, .banner])
+        } else {
+            completionHandler([.sound, .alert])
+        }
+    }
+}
+
+extension AppDelegate: CustomNotificationsHandler {
+    public func handleArticleNotification(_ userInfo: [AnyHashable: Any]) {
+        let articleId: Int? = (userInfo[NotificationKeys.articleId.rawValue] as? NSString)?.integerValue ?? userInfo[NotificationKeys.articleId.rawValue] as? Int
+        
+        if let articleId = articleId {
+            NotificationCenter.default.post(name: .articleDetailRequested, object: nil, userInfo: [NotificationKeys.articleId.rawValue: articleId])
+        }
+    }
+
+    public func handleReservation(_ userInfo: [AnyHashable: Any]) {
+        guard let reservationId = userInfo[NotificationKeys.reservationId.rawValue] as? String else {
+            assertionFailure("Could not get reservationId from userInfo")
+            return
+        }
+        
+        NotificationCenter.default.post(name: .reservationDetailRequested, object: nil, userInfo: ["superOrderId": reservationId])
+    }
+
+    public func handleToppeckyUrl(_ userInfo: [AnyHashable: Any]) {
+        NotificationCenter.default.post(name: .toppeckyRequested, object: nil)
+    }
+}

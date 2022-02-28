@@ -1,4 +1,5 @@
 PODS:
+  - AcknowList (2.0.3)
   - Alamofire (4.9.1)
   - Alamofire-Synchronous (4.0.0):
     - Alamofire (~> 4.0)
@@ -17,6 +18,7 @@ PODS:
   - BigInt (3.1.0):
     - SipHash (~> 1.2)
   - BlockiesSwift (0.1.2)
+  - Cache (6.0.0)
   - Charts (3.6.0):
     - Charts/Core (= 3.6.0)
   - Charts/Core (3.6.0)
@@ -33,6 +35,123 @@ PODS:
     - EthereumAddress (~> 1.3)
   - EthereumAddress (1.3.0):
     - CryptoSwift (~> 1.0)
+  - Firebase/Analytics (8.11.0):
+    - Firebase/Core
+  - Firebase/Core (8.11.0):
+    - Firebase/CoreOnly
+    - FirebaseAnalytics (~> 8.11.0)
+  - Firebase/CoreOnly (8.11.0):
+    - FirebaseCore (= 8.11.0)
+  - Firebase/Crashlytics (8.11.0):
+    - Firebase/CoreOnly
+    - FirebaseCrashlytics (~> 8.11.0)
+  - Firebase/Messaging (8.11.0):
+    - Firebase/CoreOnly
+    - FirebaseMessaging (~> 8.11.0)
+  - Firebase/RemoteConfig (8.11.0):
+    - Firebase/CoreOnly
+    - FirebaseRemoteConfig (~> 8.11.0)
+  - FirebaseABTesting (8.11.0):
+    - FirebaseCore (~> 8.0)
+  - FirebaseAnalytics (8.11.0):
+    - FirebaseAnalytics/AdIdSupport (= 8.11.0)
+    - FirebaseCore (~> 8.0)
+    - FirebaseInstallations (~> 8.0)
+    - GoogleUtilities/AppDelegateSwizzler (~> 7.7)
+    - GoogleUtilities/MethodSwizzler (~> 7.7)
+    - GoogleUtilities/Network (~> 7.7)
+    - "GoogleUtilities/NSData+zlib (~> 7.7)"
+    - nanopb (~> 2.30908.0)
+  - FirebaseAnalytics/AdIdSupport (8.11.0):
+    - FirebaseCore (~> 8.0)
+    - FirebaseInstallations (~> 8.0)
+    - GoogleAppMeasurement (= 8.11.0)
+    - GoogleUtilities/AppDelegateSwizzler (~> 7.7)
+    - GoogleUtilities/MethodSwizzler (~> 7.7)
+    - GoogleUtilities/Network (~> 7.7)
+    - "GoogleUtilities/NSData+zlib (~> 7.7)"
+    - nanopb (~> 2.30908.0)
+  - FirebaseCore (8.11.0):
+    - FirebaseCoreDiagnostics (~> 8.0)
+    - GoogleUtilities/Environment (~> 7.7)
+    - GoogleUtilities/Logger (~> 7.7)
+  - FirebaseCoreDiagnostics (8.11.0):
+    - GoogleDataTransport (~> 9.1)
+    - GoogleUtilities/Environment (~> 7.7)
+    - GoogleUtilities/Logger (~> 7.7)
+    - nanopb (~> 2.30908.0)
+  - FirebaseCrashlytics (8.11.0):
+    - FirebaseCore (~> 8.0)
+    - FirebaseInstallations (~> 8.0)
+    - GoogleDataTransport (~> 9.1)
+    - GoogleUtilities/Environment (~> 7.7)
+    - nanopb (~> 2.30908.0)
+    - PromisesObjC (< 3.0, >= 1.2)
+  - FirebaseInstallations (8.11.0):
+    - FirebaseCore (~> 8.0)
+    - GoogleUtilities/Environment (~> 7.7)
+    - GoogleUtilities/UserDefaults (~> 7.7)
+    - PromisesObjC (< 3.0, >= 1.2)
+  - FirebaseMessaging (8.11.0):
+    - FirebaseCore (~> 8.0)
+    - FirebaseInstallations (~> 8.0)
+    - GoogleDataTransport (~> 9.1)
+    - GoogleUtilities/AppDelegateSwizzler (~> 7.7)
+    - GoogleUtilities/Environment (~> 7.7)
+    - GoogleUtilities/Reachability (~> 7.7)
+    - GoogleUtilities/UserDefaults (~> 7.7)
+    - nanopb (~> 2.30908.0)
+  - FirebaseRemoteConfig (8.11.0):
+    - FirebaseABTesting (~> 8.0)
+    - FirebaseCore (~> 8.0)
+    - FirebaseInstallations (~> 8.0)
+    - GoogleUtilities/Environment (~> 7.7)
+    - "GoogleUtilities/NSData+zlib (~> 7.7)"
+  - GoogleAppMeasurement (8.11.0):
+    - GoogleAppMeasurement/AdIdSupport (= 8.11.0)
+    - GoogleUtilities/AppDelegateSwizzler (~> 7.7)
+    - GoogleUtilities/MethodSwizzler (~> 7.7)
+    - GoogleUtilities/Network (~> 7.7)
+    - "GoogleUtilities/NSData+zlib (~> 7.7)"
+    - nanopb (~> 2.30908.0)
+  - GoogleAppMeasurement/AdIdSupport (8.11.0):
+    - GoogleAppMeasurement/WithoutAdIdSupport (= 8.11.0)
+    - GoogleUtilities/AppDelegateSwizzler (~> 7.7)
+    - GoogleUtilities/MethodSwizzler (~> 7.7)
+    - GoogleUtilities/Network (~> 7.7)
+    - "GoogleUtilities/NSData+zlib (~> 7.7)"
+    - nanopb (~> 2.30908.0)
+  - GoogleAppMeasurement/WithoutAdIdSupport (8.11.0):
+    - GoogleUtilities/AppDelegateSwizzler (~> 7.7)
+    - GoogleUtilities/MethodSwizzler (~> 7.7)
+    - GoogleUtilities/Network (~> 7.7)
+    - "GoogleUtilities/NSData+zlib (~> 7.7)"
+    - nanopb (~> 2.30908.0)
+  - GoogleDataTransport (9.1.2):
+    - GoogleUtilities/Environment (~> 7.2)
+    - nanopb (~> 2.30908.0)
+    - PromisesObjC (< 3.0, >= 1.2)
+  - GoogleUtilities/AppDelegateSwizzler (7.7.0):
+    - GoogleUtilities/Environment
+    - GoogleUtilities/Logger
+    - GoogleUtilities/Network
+  - GoogleUtilities/Environment (7.7.0):
+    - PromisesObjC (< 3.0, >= 1.2)
+  - GoogleUtilities/Logger (7.7.0):
+    - GoogleUtilities/Environment
+  - GoogleUtilities/MethodSwizzler (7.7.0):
+    - GoogleUtilities/Logger
+  - GoogleUtilities/Network (7.7.0):
+    - GoogleUtilities/Logger
+    - "GoogleUtilities/NSData+zlib"
+    - GoogleUtilities/Reachability
+  - "GoogleUtilities/NSData+zlib (7.7.0)"
+  - GoogleUtilities/Reachability (7.7.0):
+    - GoogleUtilities/Logger
+  - GoogleUtilities/UserDefaults (7.7.0):
+    - GoogleUtilities/Logger
+  - Imaginary (5.0.0):
+    - Cache (~> 6.0.0)
   - iOSSnapshotTestCase (6.2.0):
     - iOSSnapshotTestCase/SwiftSupport (= 6.2.0)
   - iOSSnapshotTestCase/Core (6.2.0)
@@ -40,12 +159,16 @@ PODS:
     - iOSSnapshotTestCase/Core
   - JSONRPCKit (2.0.3):
     - Result (~> 3.0)
+  - JTAppleCalendar (7.1.8)
+  - JVFloatLabeledTextField (1.2.2)
   - Kanna (5.0.0)
   - KeychainSwift (10.0.0)
   - Kingfisher (5.15.7):
     - Kingfisher/Core (= 5.15.7)
   - Kingfisher/Core (5.15.7)
   - libsodium (1.0.12)
+  - Lightbox (2.5.0):
+    - Imaginary (~> 5.0.0)
   - MailchimpSDK (2.0.4)
   - MBProgressHUD (1.2.0)
   - Mixpanel-swift (2.8.0):
@@ -56,12 +179,41 @@ PODS:
   - Moya/Core (10.0.2):
     - Alamofire (~> 4.1)
     - Result (~> 3.0)
+  - nanopb (2.30908.0):
+    - nanopb/decode (= 2.30908.0)
+    - nanopb/encode (= 2.30908.0)
+  - nanopb/decode (2.30908.0)
+  - nanopb/encode (2.30908.0)
   - PaperTrailLumberjack/Core (0.1.9):
     - CocoaAsyncSocket (~> 7.6)
     - CocoaLumberjack (~> 3.4)
   - PaperTrailLumberjack/Swift (0.1.9):
     - CocoaLumberjack/Swift (~> 3.4)
     - PaperTrailLumberjack/Core
+  - PeliLibrary (0.1.0):
+    - PeliLibrary/Articles (= 0.1.0)
+    - PeliLibrary/Core (= 0.1.0)
+    - PeliLibrary/Flights (= 0.1.0)
+    - PeliLibrary/Notifications (= 0.1.0)
+    - PeliLibrary/Products (= 0.1.0)
+  - PeliLibrary/Articles (0.1.0):
+    - PeliLibrary/Core
+  - PeliLibrary/Core (0.1.0):
+    - Alamofire (~> 4.9)
+    - JVFloatLabeledTextField
+    - Kingfisher
+    - Lightbox
+    - SVProgressHUD
+    - SwiftEntryKit (= 1.2.3)
+  - PeliLibrary/Flights (0.1.0):
+    - AcknowList (= 2.0.3)
+    - JTAppleCalendar (~> 7.1)
+    - PeliLibrary/Core
+    - StaticDataTableViewController
+  - PeliLibrary/Notifications (0.1.0):
+    - PeliLibrary/Core
+  - PeliLibrary/Products (0.1.0):
+    - PeliLibrary/Core
   - PromiseKit (6.3.5):
     - PromiseKit/CorePromise (= 6.3.5)
     - PromiseKit/Foundation (= 6.3.5)
@@ -74,8 +226,10 @@ PODS:
     - PromiseKit/CorePromise
   - PromiseKit/UIKit (6.3.5):
     - PromiseKit/CorePromise
+  - PromisesObjC (2.0.0)
   - QRCodeReaderViewController (4.0.2)
-  - R.swift (5.4.0):
+  - QuickLayout (3.0.0)
+  - R.swift (6.1.0):
     - R.swift.Library (~> 5.3.0)
   - R.swift.Library (5.3.0)
   - Realm (5.5.1):
@@ -89,6 +243,10 @@ PODS:
   - SipHash (1.2.2)
   - Starscream (4.0.4)
   - StatefulViewController (3.0)
+  - StaticDataTableViewController (2.5.0)
+  - SVProgressHUD (2.2.5)
+  - SwiftEntryKit (1.2.3):
+    - QuickLayout (= 3.0.0)
   - SwiftLint (0.40.3)
   - SwiftProtobuf (1.18.0)
   - SwiftyJSON (5.0.0)
@@ -115,7 +273,7 @@ PODS:
     - PromiseKit (~> 6.3.0)
     - Result (~> 3.1)
     - secp256k1_ios (~> 0.1.3)
-  - xcbeautify (0.11.0)
+  - xcbeautify (0.12.0)
 
 DEPENDENCIES:
   - AlphaWalletAddress (from `modules/AlphaWalletAddress`)
@@ -131,6 +289,10 @@ DEPENDENCIES:
   - CryptoSwift (~> 1.4)
   - EthereumABI (= 1.3.0)
   - EthereumAddress (= 1.3.0)
+  - Firebase/Analytics
+  - Firebase/Crashlytics
+  - Firebase/Messaging
+  - Firebase/RemoteConfig
   - iOSSnapshotTestCase (= 6.2.0)
   - JSONRPCKit (~> 2.0.0)
   - Kanna (from `https://github.com/tid-kijyun/Kanna.git`, commit `06a04bc28783ccbb40efba355dee845a024033e8`)
@@ -141,6 +303,7 @@ DEPENDENCIES:
   - Mixpanel-swift (= 2.8.0)
   - Moya (~> 10.0.1)
   - PaperTrailLumberjack/Swift
+  - PeliLibrary (from `../PeliLibrary`)
   - PromiseKit/Alamofire
   - PromiseKit/CorePromise
   - QRCodeReaderViewController (from `https://github.com/AlphaWallet/QRCodeReaderViewController.git`, commit `30d1a2a7d167d0d207ae0ae3a4d81bcf473d7a65`)
@@ -159,6 +322,7 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
+    - AcknowList
     - Alamofire
     - Alamofire-Synchronous
     - APIKit
@@ -167,22 +331,42 @@ SPEC REPOS:
     - AWSSNS
     - BigInt
     - BlockiesSwift
+    - Cache
     - Charts
     - CocoaAsyncSocket
     - CocoaLumberjack
     - CryptoSwift
     - EthereumABI
     - EthereumAddress
+    - Firebase
+    - FirebaseABTesting
+    - FirebaseAnalytics
+    - FirebaseCore
+    - FirebaseCoreDiagnostics
+    - FirebaseCrashlytics
+    - FirebaseInstallations
+    - FirebaseMessaging
+    - FirebaseRemoteConfig
+    - GoogleAppMeasurement
+    - GoogleDataTransport
+    - GoogleUtilities
+    - Imaginary
     - iOSSnapshotTestCase
     - JSONRPCKit
+    - JTAppleCalendar
+    - JVFloatLabeledTextField
     - Kingfisher
     - libsodium
+    - Lightbox
     - MailchimpSDK
     - MBProgressHUD
     - Mixpanel-swift
     - Moya
+    - nanopb
     - PaperTrailLumberjack
     - PromiseKit
+    - PromisesObjC
+    - QuickLayout
     - R.swift
     - R.swift.Library
     - Realm
@@ -193,6 +377,9 @@ SPEC REPOS:
     - SipHash
     - Starscream
     - StatefulViewController
+    - StaticDataTableViewController
+    - SVProgressHUD
+    - SwiftEntryKit
     - SwiftLint
     - SwiftProtobuf
     - SwiftyJSON
@@ -213,6 +400,8 @@ EXTERNAL SOURCES:
   KeychainSwift:
     :commit: b797d40a9d08ec509db4335140cf2259b226e6a2
     :git: https://github.com/AlphaWallet/keychain-swift.git
+  PeliLibrary:
+    :path: "../PeliLibrary"
   QRCodeReaderViewController:
     :commit: 30d1a2a7d167d0d207ae0ae3a4d81bcf473d7a65
     :git: https://github.com/AlphaWallet/QRCodeReaderViewController.git
@@ -255,6 +444,7 @@ CHECKOUT OPTIONS:
     :git: https://github.com/AlphaWallet/web3swift.git
 
 SPEC CHECKSUMS:
+  AcknowList: 6d4faca4c3e0173377fe5649e086d627cd60b003
   Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
   Alamofire-Synchronous: eedf1e6e961c3795a63c74990b3f7d9fbfac7e50
   AlphaWalletAddress: a3049b4c79f4d1cc4c336772401a6143c25d417c
@@ -266,26 +456,47 @@ SPEC CHECKSUMS:
   AWSSNS: d3ed65985986d5393de2793259e457e466997b55
   BigInt: 76b5dfdfa3e2e478d4ffdf161aeede5502e2742f
   BlockiesSwift: 22d8d56dd187e6bfd16cb8c8fbd4fd4896c3e65d
+  Cache: 4ca7e00363fca5455f26534e5607634c820ffc2d
   Charts: b1e3a1f5a1c9ba5394438ca3b91bd8c9076310af
   CocoaAsyncSocket: 065fd1e645c7abab64f7a6a2007a48038fdc6a99
   CocoaLumberjack: e8955b9d337ac307103b0a34fd141c32f27e53c5
   CryptoSwift: a532e74ed010f8c95f611d00b8bbae42e9fe7c17
   EthereumABI: c021720744d260b87def6aa45d94554d260cb5a9
   EthereumAddress: 39fe8e11cf04e4e9902b55ae653dbc4e0aee5f30
+  Firebase: 44dd9724c84df18b486639e874f31436eaa9a20c
+  FirebaseABTesting: aac00a5472250a45f1462675792030e44df025c7
+  FirebaseAnalytics: 4e4b13031034e6561ed3bd1d47b6fdabbd6487c6
+  FirebaseCore: 2f4f85b453cc8fea4bb2b37e370007d2bcafe3f0
+  FirebaseCoreDiagnostics: 64d9709d804a6c25bd77841371c1fcfd909d5601
+  FirebaseCrashlytics: 62268addefae79601057818156e8bc69d71fee41
+  FirebaseInstallations: 044eede8a049bce71c4541ee68d6e4364fcbe774
+  FirebaseMessaging: 02e248e8997f71fa8cc9d78e9d49ec1a701ba14a
+  FirebaseRemoteConfig: a6a1ce9dabf404817ae2a44e8421d276660d9091
+  GoogleAppMeasurement: aa3cb422fab2b05d2efac543a5720d1a85b9dea5
+  GoogleDataTransport: 629c20a4d363167143f30ea78320d5a7eb8bd940
+  GoogleUtilities: e0913149f6b0625b553d70dae12b49fc62914fd1
+  Imaginary: cf5e3a7dd6ab1dcbd47ba8ce5edf2307c4e99eb3
   iOSSnapshotTestCase: 9ab44cb5aa62b84d31847f40680112e15ec579a6
   JSONRPCKit: b2991f2f242d72022083f9d869140dabd26d65c7
+  JTAppleCalendar: b7fb40852f5f319fe55c8ec3861f1de0edc99cc8
+  JVFloatLabeledTextField: df48598472ee015701d509f43e59492a0d4ca208
   Kanna: a32875df62975f8f4b871e933b4ea1a5c3b8be0f
   KeychainSwift: c0d1b0c2901b9873f07f0e560fde92929069e863
   Kingfisher: 6e1a13523fcb1c86924ce53affe4ac957e544d59
   libsodium: 9a8faa5ef2fa0d2d57bd7f7d79bf8fb7c1a9f0ea
+  Lightbox: cc3d5124f024fa8197fd23f913160db1c61a1852
   MailchimpSDK: 794fd7cb1095e55c764d8a699eb11fb61849ed76
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
   Mixpanel-swift: c16e5d3f7862b4a2f9b6b69b7e19ccacc3b12007
   Moya: 2b0531a9fef318e0bc484030c3db1e6f279ccb66
+  nanopb: a0ba3315591a9ae0a16a309ee504766e90db0c96
   PaperTrailLumberjack: 449587968d5aeb3eab2d4de041ffc61ee2d49f25
+  PeliLibrary: ab9246cc7c30a442c85c42246042cc0b7e04c754
   PromiseKit: 32c36425387e9cfc7f1206f27bfd906d0b53c0d6
+  PromisesObjC: 68159ce6952d93e17b2dfe273b8c40907db5ba58
   QRCodeReaderViewController: e8f27d035b3e72b1d4b1c61ff66458287e3be0ff
-  R.swift: c533450b0f7dc494e0993f5f1a1db925d84c3006
+  QuickLayout: 07b45a72b10083fee3f095990cfed1c1e7b27f0a
+  R.swift: ec98ff71c4ab2f6fd01dd077e5afd15e63a4834c
   R.swift.Library: 0fc583cb55a99e28901299cc451614cad1161962
   Realm: c2ffe0667f9c98c9ba65f608ba85684d39826145
   RealmSwift: 5a35c1c35c3e1925e6fcd092c881d5cc4a826bff
@@ -295,6 +506,9 @@ SPEC CHECKSUMS:
   SipHash: fad90a4683e420c52ef28063063dbbce248ea6d4
   Starscream: 5178aed56b316f13fa3bc55694e583d35dd414d9
   StatefulViewController: 4803bf900d44de26074344998e10e041113b5931
+  StaticDataTableViewController: 0c5c4a47861446dd3cfd52530ae801ec7662ce26
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  SwiftEntryKit: 340713c2e4a6662c5149629990bf1088bf5f0389
   SwiftLint: dfd554ff0dff17288ee574814ccdd5cea85d76f7
   SwiftProtobuf: c3c12645230d9b09c72267e0de89468c5543bd86
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
@@ -303,8 +517,8 @@ SPEC CHECKSUMS:
   TrustWalletCore: a92d85baa15932279cce925559e93695558cafdd
   WalletConnectSwift: 046ae74e8cb69445be9c94c66ef66f9cb019b68f
   web3swift: 06118d4c4edc801444aaa995bbbddeda176b97ef
-  xcbeautify: b2c6b50c9cab6414296898e94cd153e4ea879662
+  xcbeautify: 1ab63c14a585bc1dd1ef24c5c9cc307e3284f3f6
 
-PODFILE CHECKSUM: 9adb0206784bf8b8acc4f4663f71db21ccd5f157
+PODFILE CHECKSUM: c11af2f6e36e67a8b4d9d3f7efb544b6d70914a2
 
 COCOAPODS: 1.11.2

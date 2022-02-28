@@ -96,9 +96,9 @@ class AppCoordinator: NSObject, Coordinator {
 
         super.init()
         window.rootViewController = navigationController
-        window.makeKeyAndVisible()
-
-        setupSplashViewController(on: navigationController)
+//        window.makeKeyAndVisible()
+//
+//        setupSplashViewController(on: navigationController)
     }
 
     func start() {
@@ -319,7 +319,7 @@ extension AppCoordinator: InitialWalletCreationCoordinatorDelegate {
     }
 
     func didAddAccount(_ account: Wallet, in coordinator: InitialWalletCreationCoordinator) {
-        coordinator.navigationController.dismiss(animated: true)
+//        coordinator.navigationController.dismiss(animated: true)
 
         removeCoordinator(coordinator)
 
@@ -334,7 +334,7 @@ extension AppCoordinator: InCoordinatorDelegate {
 
         keystore.recentlyUsedWallet = wallet
 
-        coordinator.navigationController.dismiss(animated: true)
+//        coordinator.navigationController.dismiss(animated: true)
         removeCoordinator(coordinator)
 
         showTransactions(for: keystore.currentWallet, animated: false)
@@ -508,7 +508,7 @@ extension AppCoordinator: AccountsCoordinatorDelegate {
     }
 
     func didAddAccount(account: Wallet, in coordinator: AccountsCoordinator) {
-        coordinator.navigationController.dismiss(animated: true)
+//        coordinator.navigationController.dismiss(animated: true)
     }
 
     func didDeleteAccount(account: Wallet, in coordinator: AccountsCoordinator) {
