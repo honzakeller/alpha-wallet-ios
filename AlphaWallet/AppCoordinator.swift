@@ -95,13 +95,13 @@ class AppCoordinator: NSObject, Coordinator {
         self.legacyFileBasedKeystore = try LegacyFileBasedKeystore(analyticsCoordinator: analyticsService)
 
         super.init()
-        window.rootViewController = navigationController
+//        window.rootViewController = navigationController
 //        window.makeKeyAndVisible()
 //
 //        setupSplashViewController(on: navigationController)
     }
 
-    func start() {
+    func start() {  
         if isRunningTests() {
             try! RealmConfiguration.removeWalletsFolderForTests()
             JsonWalletAddressesStore.removeWalletsFolderForTests()

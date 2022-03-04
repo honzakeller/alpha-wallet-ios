@@ -16,8 +16,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "8703FBFC270366DA0062C416"
-               BuildableName = "KeyoroSafariExtension.appex"
-               BlueprintName = "KeyoroSafariExtension"
+               BuildableName = "AlphaWalletSafariExtension.appex"
+               BlueprintName = "AlphaWalletSafariExtension"
                ReferencedContainer = "container:AlphaWallet.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -30,8 +30,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2912CCF41F6A830700C6CBE3"
-               BuildableName = "Keyoro.app"
-               BlueprintName = "Keyoro"
+               BuildableName = "AlphaWallet.app"
+               BlueprintName = "AlphaWallet"
                ReferencedContainer = "container:AlphaWallet.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -62,8 +62,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2912CCF41F6A830700C6CBE3"
-            BuildableName = "Keyoro.app"
-            BlueprintName = "Keyoro"
+            BuildableName = "AlphaWallet.app"
+            BlueprintName = "AlphaWallet"
             ReferencedContainer = "container:AlphaWallet.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -74,14 +74,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES"
+      askForAppToLaunch = "Yes"
       launchAutomaticallySubstyle = "2">
       <BuildableProductRunnable
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2912CCF41F6A830700C6CBE3"
-            BuildableName = "Keyoro.app"
-            BlueprintName = "Keyoro"
+            BuildableName = "AlphaWallet.app"
+            BlueprintName = "AlphaWallet"
             ReferencedContainer = "container:AlphaWallet.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

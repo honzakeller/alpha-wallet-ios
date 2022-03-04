@@ -229,7 +229,7 @@ PODS:
   - PromisesObjC (2.0.0)
   - QRCodeReaderViewController (4.0.2)
   - QuickLayout (3.0.0)
-  - R.swift (6.1.0):
+  - R.swift (5.4.0):
     - R.swift.Library (~> 5.3.0)
   - R.swift.Library (5.3.0)
   - Realm (5.5.1):
@@ -273,7 +273,7 @@ PODS:
     - PromiseKit (~> 6.3.0)
     - Result (~> 3.1)
     - secp256k1_ios (~> 0.1.3)
-  - xcbeautify (0.12.0)
+  - xcbeautify (0.11.0)
 
 DEPENDENCIES:
   - AlphaWalletAddress (from `modules/AlphaWalletAddress`)
@@ -496,7 +496,7 @@ SPEC CHECKSUMS:
   PromisesObjC: 68159ce6952d93e17b2dfe273b8c40907db5ba58
   QRCodeReaderViewController: e8f27d035b3e72b1d4b1c61ff66458287e3be0ff
   QuickLayout: 07b45a72b10083fee3f095990cfed1c1e7b27f0a
-  R.swift: ec98ff71c4ab2f6fd01dd077e5afd15e63a4834c
+  R.swift: c533450b0f7dc494e0993f5f1a1db925d84c3006
   R.swift.Library: 0fc583cb55a99e28901299cc451614cad1161962
   Realm: c2ffe0667f9c98c9ba65f608ba85684d39826145
   RealmSwift: 5a35c1c35c3e1925e6fcd092c881d5cc4a826bff
@@ -517,8 +517,8 @@ SPEC CHECKSUMS:
   TrustWalletCore: a92d85baa15932279cce925559e93695558cafdd
   WalletConnectSwift: 046ae74e8cb69445be9c94c66ef66f9cb019b68f
   web3swift: 06118d4c4edc801444aaa995bbbddeda176b97ef
-  xcbeautify: 1ab63c14a585bc1dd1ef24c5c9cc307e3284f3f6
+  xcbeautify: b2c6b50c9cab6414296898e94cd153e4ea879662
 
-PODFILE CHECKSUM: c11af2f6e36e67a8b4d9d3f7efb544b6d70914a2
+PODFILE CHECKSUM: 2166fb5fdfe0c32852520902b1d2d8314df801e1
 
 COCOAPODS: 1.11.2

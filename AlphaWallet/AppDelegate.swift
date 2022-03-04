@@ -13,7 +13,7 @@ import UserNotifications
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDelegate {
     var window: UIWindow?
-    private var appCoordinator: AppCoordinator!
+    var appCoordinator: AppCoordinator!
     private let SNSPlatformApplicationArn = "arn:aws:sns:us-west-2:400248756644:app/APNS/AlphaWallet-iOS"
     private let SNSPlatformApplicationArnSANDBOX = "arn:aws:sns:us-west-2:400248756644:app/APNS_SANDBOX/AlphaWallet-testing"
     private let identityPoolId = "us-west-2:42f7f376-9a3f-412e-8c15-703b5d50b4e2"
@@ -25,10 +25,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
 
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        window = UIWindow(frame: UIScreen.main.bounds)
-        //Necessary to make UIAlertController have the correct tint colors, despite already doing: `UIWindow.appearance().tintColor = Colors.appTint`
-        window?.tintColor = Colors.appTint
-
+        FirebaseApp.configure()
+        
+        initPeliModules()
+        
         do {
             //NOTE: we move AnalyticsService creation from AppCoordinator.init method to allow easily replace
             let analyticsService = AnalyticsService()
@@ -49,7 +49,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
 
         }
         
-        initPeliModules()
         //customizeAppearence()
         configureNotifications()
         protectionCoordinator.didFinishLaunchingWithOptions()
@@ -57,6 +56,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
         processLaunchOptions(launchOptions)
         
         protectionCoordinator.didFinishLaunchingWithOptions()
+        customizeAppearence()
 
         return true
     }
@@ -92,7 +92,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
        window?.rootViewController = UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController()
        window?.makeKeyAndVisible()
        
-       SVProgressHUD.setContainerView(window)
+       //SVProgressHUD.setContainerView(window)
        
        configureFonts()
        registerImages()
@@ -223,9 +223,76 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
         return handled
     }
 
-    // Respond to amazon SNS registration
-    func application(_ application: UIApplication,
-                     didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+    func subscribeToTopicSNS(token: String, topicEndpoint: String) {
+        let sns = AWSSNS.default()
+        guard let endpointRequest = AWSSNSCreatePlatformEndpointInput() else { return }
+        #if DEBUG
+            endpointRequest.platformApplicationArn = SNSPlatformApplicationArnSANDBOX
+        #else
+            endpointRequest.platformApplicationArn = SNSPlatformApplicationArn
+        #endif
+        endpointRequest.token = token
+
+        sns.createPlatformEndpoint(endpointRequest).continueWith { task in
+            guard let response: AWSSNSCreateEndpointResponse = task.result else { return nil }
+            guard let subscribeRequest = AWSSNSSubscribeInput() else { return nil }
+            subscribeRequest.endpoint = response.endpointArn
+            subscribeRequest.protocols = "application"
+            subscribeRequest.topicArn = topicEndpoint
+            return sns.subscribe(subscribeRequest)
+        }
+    }
+
+    @discardableResult private func handleUniversalLink(url: URL) -> Bool {
+        let handled = appCoordinator.handleUniversalLink(url: url)
+        return handled
+    }
+    
+    open func customizeAppearence() {
+        let view = UIView.appearance(whenContainedInInstancesOf: [UIAlertController.self])
+        view.tintColor = UIColor.peliBlue
+        
+        window?.tintColor = UIColor.peliPrimary
+        
+        UITextView.appearance().tintColor = .peliPrimary
+        
+        UINavigationBar.appearance().tintColor = UIColor.peliLabel
+        
+        if #available(iOS 15.0, *) {
+            let navigationBarAppearance = UINavigationBarAppearance()
+            navigationBarAppearance.configureWithDefaultBackground()
+            navigationBarAppearance.backgroundColor = UIColor.peliAppBar
+            UINavigationBar.appearance().standardAppearance = navigationBarAppearance
+            UINavigationBar.appearance().compactAppearance = navigationBarAppearance
+            UINavigationBar.appearance().scrollEdgeAppearance = navigationBarAppearance
+            
+            let tabBarAppearance = UITabBarAppearance()
+            tabBarAppearance.configureWithDefaultBackground()
+            tabBarAppearance.backgroundColor = UIColor.peliAppBar
+            UITabBar.appearance().standardAppearance = tabBarAppearance
+            UITabBar.appearance().scrollEdgeAppearance = tabBarAppearance
+        } else {
+            UINavigationBar.appearance().barTintColor = UIColor.peliAppBar
+            UITabBar.appearance().barTintColor = UIColor.peliAppBar
+        }
+        
+        UITabBar.appearance().tintColor = UIColor.peliPrimary
+        UITabBar.appearance().unselectedItemTintColor = UIColor.secondaryPeliLabel
+        
+        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font: FontManager.shared.regular11], for: .normal)
+        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font: FontManager.shared.regular11], for: .selected)
+        
+        UINavigationBar.appearance().titleTextAttributes = [
+            NSAttributedString.Key.foregroundColor: UIColor.peliLabel,
+            NSAttributedString.Key.font: FontManager.shared.bold18
+        ]
+    }
+}
+
+extension AppDelegate: MessagingDelegate {
+    func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+        Messaging.messaging().apnsToken = deviceToken
+        
         /// Attach the device token to the user defaults
         var token = ""
         for i in 0..<deviceToken.count {
@@ -259,45 +326,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
             }
             return nil
         })
-    }
-
-    func subscribeToTopicSNS(token: String, topicEndpoint: String) {
-        let sns = AWSSNS.default()
-        guard let endpointRequest = AWSSNSCreatePlatformEndpointInput() else { return }
-        #if DEBUG
-            endpointRequest.platformApplicationArn = SNSPlatformApplicationArnSANDBOX
-        #else
-            endpointRequest.platformApplicationArn = SNSPlatformApplicationArn
-        #endif
-        endpointRequest.token = token
-
-        sns.createPlatformEndpoint(endpointRequest).continueWith { task in
-            guard let response: AWSSNSCreateEndpointResponse = task.result else { return nil }
-            guard let subscribeRequest = AWSSNSSubscribeInput() else { return nil }
-            subscribeRequest.endpoint = response.endpointArn
-            subscribeRequest.protocols = "application"
-            subscribeRequest.topicArn = topicEndpoint
-            return sns.subscribe(subscribeRequest)
-        }
-    }
-
-    //TODO Handle SNS errors
-    func application(_ application: UIApplication,
-                     didFailToRegisterForRemoteNotificationsWithError error: Error) {
-        //no op
-    }
-
-    @discardableResult private func handleUniversalLink(url: URL) -> Bool {
-        let handled = appCoordinator.handleUniversalLink(url: url)
-        return handled
-    }
-}
-
-extension AppDelegate: MessagingDelegate {
-    func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
-        Messaging.messaging().apnsToken = deviceToken
-        
-        print("🚨 Registered for remote notifications")
     }
 
     func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {

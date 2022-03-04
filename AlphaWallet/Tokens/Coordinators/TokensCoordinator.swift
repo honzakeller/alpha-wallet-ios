@@ -511,14 +511,14 @@ extension TokensCoordinator: WalletCoordinatorDelegate {
     func didFinish(with account: Wallet, in coordinator: WalletCoordinator) {
         removeCoordinator(coordinator)
 
-        coordinator.navigationController.dismiss(animated: true)
+//        coordinator.navigationController.dismiss(animated: true)
         delegate?.didSelectAccount(account: account, in: self)
     }
 
     func didCancel(in coordinator: WalletCoordinator) {
         removeCoordinator(coordinator)
 
-        coordinator.navigationController.dismiss(animated: true)
+//        coordinator.navigationController.dismiss(animated: true)
     }
 }
 

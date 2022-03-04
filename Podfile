@@ -2,7 +2,7 @@ platform :ios, '13.0'
 inhibit_all_warnings!
 source 'https://cdn.cocoapods.org/'
 
-target 'Keyoro' do
+target 'AlphaWallet' do
   use_frameworks!
   pod 'BigInt', '~> 3.1'
   pod 'R.swift'

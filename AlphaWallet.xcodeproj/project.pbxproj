@@ -217,6 +217,7 @@
 		29FF130A1F75F67200AFD326 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FF13091F75F67200AFD326 /* Address.swift */; };
 		29FF130D1F7626E800AFD326 /* FakeNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FF130C1F7626E800AFD326 /* FakeNavigationController.swift */; };
 		29FF6D6B2011D2AF00A3011C /* InCoordinatorError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FF6D6A2011D2AF00A3011C /* InCoordinatorError.swift */; };
+		2A669F5585899E890EF26C57 /* Pods_AlphaWallet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B5A03D1E5E417FE79607D0F /* Pods_AlphaWallet.framework */; };
 		442FC01053E2F1B59355A961 /* Arguments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442FCC7DC5A13C023F7F2C26 /* Arguments.swift */; };
 		442FC0B59B23C0F3068621C0 /* NumberStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442FC575B6A4A50B0555E1B0 /* NumberStepper.swift */; };
 		442FC249C2A39F85BDBD7987 /* GetDecimalsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442FC0F2E3BB3EE420BC2C16 /* GetDecimalsCoordinator.swift */; };
@@ -237,7 +238,6 @@
 		442FCE0709E29BF233F32CAB /* GetERC875BalanceCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442FC002CDEA792B8ECD3E13 /* GetERC875BalanceCoordinator.swift */; };
 		442FCE0DAE5527A93F54022C /* RedeemTokenCardQuantitySelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442FCC17EAB857C58732831E /* RedeemTokenCardQuantitySelectionViewController.swift */; };
 		442FCE2BEE8D475C7DEB39C1 /* RedeemTokenCardQuantitySelectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442FC54DA900FA2F9BB73A63 /* RedeemTokenCardQuantitySelectionViewModel.swift */; };
-		4FB5504792C0D3F28F0F5976 /* Pods_Keyoro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE4245E21F26A0395BCD444A /* Pods_Keyoro.framework */; };
 		5E7C701BFF4469B35A074EB9 /* RequestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7C767497AD8DEE83F384D7 /* RequestViewModel.swift */; };
 		5E7C70275E403AADE88BD17F /* RPCServerOrAny.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7C7BE086F00DE44B4EDCED /* RPCServerOrAny.swift */; };
 		5E7C702C2DAB1DF984193D14 /* EventActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7C737CC822F8143DE1FDC0 /* EventActivity.swift */; };
@@ -275,6 +275,7 @@
 		5E7C7110A4DF17DA65B912AC /* EnterSellTokensCardPriceQuantityViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7C7ABB1538A0E83EEAEB0C /* EnterSellTokensCardPriceQuantityViewControllerTests.swift */; };
 		5E7C711131E8E0B8AD983B70 /* EthChainIdRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7C7DA5F3C065F96CCB34B4 /* EthChainIdRequest.swift */; };
 		5E7C71145CE952518B3EECE3 /* AccountViewTableSectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7C7E7720DE64069CCF37D5 /* AccountViewTableSectionHeader.swift */; };
+		5E7C7126E01D824557FD7731 /* BlockscanChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7C714BB4A095BE99B18F7A /* BlockscanChat.swift */; };
 		5E7C712B11D9D9AAA02C022F /* WalletConnectSessionCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7C7DC4B06C1A623788EEED /* WalletConnectSessionCellViewModel.swift */; };
 		5E7C7131E338A806132D989B /* DateEntryField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7C7CD1FB7D353704EF3389 /* DateEntryField.swift */; };
 		5E7C7133FCB97894647E2628 /* SeedPhraseBackupIntroductionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7C78CF45AA54EF8647C44B /* SeedPhraseBackupIntroductionViewController.swift */; };
@@ -542,6 +543,7 @@
 		5E7C7B2A4B7C94922DED2EA0 /* TokenCardRowViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7C78CDFEB86A8356EA5818 /* TokenCardRowViewProtocol.swift */; };
 		5E7C7B2C388D0B6E8AE1EED6 /* TransactionConfirmationRowDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7C7919EE31DC0B8FCF0D40 /* TransactionConfirmationRowDescriptionView.swift */; };
 		5E7C7B3027F3A56EF3EE5B7F /* EthCalllRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7C7ADC229B4038964F417C /* EthCalllRequest.swift */; };
+		5E7C7B371C9A7BEC46D8633D /* RemoteCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7C7DD30D23ACDDA7995355 /* RemoteCounter.swift */; };
 		5E7C7B3E08EEA63C5B68B9C4 /* TokenCardRedemptionInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7C778F20D32B70D7FF2135 /* TokenCardRedemptionInfoViewController.swift */; };
 		5E7C7B414FA8A428798D73EF /* OpenSeaNonFungibleTokenHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7C758EEBD945A3451C96C8 /* OpenSeaNonFungibleTokenHandling.swift */; };
 		5E7C7B4778FF36371701242E /* BrowserHistoryViewControllerHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7C79FA3E6A05845ECFCDCF /* BrowserHistoryViewControllerHeaderView.swift */; };
@@ -735,7 +737,7 @@
 		8703FC0D270366DA0062C416 /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = 8703FC0C270366DA0062C416 /* popup.html */; };
 		8703FC0F270366DA0062C416 /* popup.css in Resources */ = {isa = PBXBuildFile; fileRef = 8703FC0E270366DA0062C416 /* popup.css */; };
 		8703FC11270366DA0062C416 /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = 8703FC10270366DA0062C416 /* popup.js */; };
-		8703FC15270366DA0062C416 /* KeyoroSafariExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8703FBFD270366DA0062C416 /* KeyoroSafariExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8703FC15270366DA0062C416 /* AlphaWalletSafariExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8703FBFD270366DA0062C416 /* AlphaWalletSafariExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		870415A125E8FBD30013F3E2 /* MixpanelCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870415A025E8FBD30013F3E2 /* MixpanelCoordinatorTests.swift */; };
 		8712A37F26F315190009C376 /* EditPriceAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8712A37E26F315190009C376 /* EditPriceAlertViewController.swift */; };
 		8712A38326F475830009C376 /* PriceAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8712A38226F475830009C376 /* PriceAlert.swift */; };
@@ -854,12 +856,13 @@
 		877D00AF25ADF60A008E22CC /* TransactionConfiguratorTransactionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877D00AE25ADF60A008E22CC /* TransactionConfiguratorTransactionsTests.swift */; };
 		8780FDAD27BF883F00BBE9DD /* ActivityOrTransactionInstance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8780FDAC27BF883F00BBE9DD /* ActivityOrTransactionInstance.swift */; };
 		8780FDAF27BF887700BBE9DD /* ActivitiesFilterStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8780FDAE27BF887700BBE9DD /* ActivitiesFilterStrategy.swift */; };
+		8780FDBF27C3CC0F00BBE9DD /* ChangeSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8780FDBE27C3CC0F00BBE9DD /* ChangeSet.swift */; };
 		8782035D2431E66600792F12 /* FilterTokensCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8782035C2431E66600792F12 /* FilterTokensCoordinator.swift */; };
 		8782035F2431FBC300792F12 /* ShowAddHideTokensViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8782035E2431FBC300792F12 /* ShowAddHideTokensViewModel.swift */; };
 		87897B9C25EF7C08006E3C75 /* ShowSeedPhraseIntroductionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87897B9B25EF7C08006E3C75 /* ShowSeedPhraseIntroductionViewController.swift */; };
 		87897B9E25EF7C50006E3C75 /* ShowSeedPhraseIntroductionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87897B9D25EF7C50006E3C75 /* ShowSeedPhraseIntroductionViewModel.swift */; };
 		878EE8EE255ADA49000210DE /* ShareContextHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878EE8ED255ADA49000210DE /* ShareContextHandler.swift */; };
-		878EE8F5255ADA49000210DE /* KeyoroShare.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 878EE8EB255ADA49000210DE /* KeyoroShare.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		878EE8F5255ADA49000210DE /* AlphaWalletShare.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 878EE8EB255ADA49000210DE /* AlphaWalletShare.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		878EE941255BBF9B000210DE /* ItemProviderValueResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878EE940255BBF9B000210DE /* ItemProviderValueResolver.swift */; };
 		878EE944255BC367000210DE /* ShareContentAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878EE943255BC367000210DE /* ShareContentAction.swift */; };
 		878EE945255BC367000210DE /* ShareContentAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878EE943255BC367000210DE /* ShareContentAction.swift */; };
@@ -1038,6 +1041,24 @@
 		CCA4FE381FD428B300749AE4 /* JailbreakChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA4FE371FD428B300749AE4 /* JailbreakChecker.swift */; };
 		CCA4FE3A1FD42B4100749AE4 /* FakeJailbreakChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA4FE391FD42B4100749AE4 /* FakeJailbreakChecker.swift */; };
 		CCCD74FD1FD2D38D004A087D /* CheckDeviceCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCD74FC1FD2D38D004A087D /* CheckDeviceCoordinator.swift */; };
+		D36467A827CD1EF900A145B5 /* KeyoroDeeplinkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D364679327CD1EF900A145B5 /* KeyoroDeeplinkHelper.swift */; };
+		D36467A927CD1EF900A145B5 /* FloatingSwitchSegment.xib in Resources */ = {isa = PBXBuildFile; fileRef = D364679627CD1EF900A145B5 /* FloatingSwitchSegment.xib */; };
+		D36467AA27CD1EF900A145B5 /* FloatingSwitchSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = D364679727CD1EF900A145B5 /* FloatingSwitchSegment.swift */; };
+		D36467AB27CD1EF900A145B5 /* FloatingSwitchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D364679827CD1EF900A145B5 /* FloatingSwitchView.xib */; };
+		D36467AC27CD1EF900A145B5 /* FloatingSwitchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D364679927CD1EF900A145B5 /* FloatingSwitchView.swift */; };
+		D36467AD27CD1EF900A145B5 /* UIViewController+SideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = D364679C27CD1EF900A145B5 /* UIViewController+SideMenu.swift */; };
+		D36467AE27CD1EF900A145B5 /* StatusBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D364679D27CD1EF900A145B5 /* StatusBar.swift */; };
+		D36467AF27CD1EF900A145B5 /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = D364679E27CD1EF900A145B5 /* Preferences.swift */; };
+		D36467B027CD1EF900A145B5 /* Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D364679F27CD1EF900A145B5 /* Delegate.swift */; };
+		D36467B127CD1EF900A145B5 /* TransitionContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36467A027CD1EF900A145B5 /* TransitionContext.swift */; };
+		D36467B227CD1EF900A145B5 /* UIViewController+Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36467A127CD1EF900A145B5 /* UIViewController+Container.swift */; };
+		D36467B327CD1EF900A145B5 /* Segue.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36467A227CD1EF900A145B5 /* Segue.swift */; };
+		D36467B427CD1EF900A145B5 /* UIView+Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36467A327CD1EF900A145B5 /* UIView+Container.swift */; };
+		D36467B527CD1EF900A145B5 /* SideMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36467A427CD1EF900A145B5 /* SideMenuController.swift */; };
+		D36467B627CD1EF900A145B5 /* BasicTransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36467A527CD1EF900A145B5 /* BasicTransitionAnimator.swift */; };
+		D36467B727CD1EF900A145B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D36467A627CD1EF900A145B5 /* Main.storyboard */; };
+		D36467B827CD1EF900A145B5 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36467A727CD1EF900A145B5 /* MainTabBarController.swift */; };
+		D3C5AD4327D2362500381280 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D3C5AD4227D2362500381280 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1071,8 +1092,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				8703FC15270366DA0062C416 /* KeyoroSafariExtension.appex in Embed App Extensions */,
-				878EE8F5255ADA49000210DE /* KeyoroShare.appex in Embed App Extensions */,
+				8703FC15270366DA0062C416 /* AlphaWalletSafariExtension.appex in Embed App Extensions */,
+				878EE8F5255ADA49000210DE /* AlphaWalletShare.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1116,6 +1137,7 @@
 		02F4E8BD27717A1500D89C19 /* SaveCustomRpcBrowseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveCustomRpcBrowseViewController.swift; sourceTree = "<group>"; };
 		02F4E8BF27717A5200D89C19 /* SaveCustomRpcBrowseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveCustomRpcBrowseView.swift; sourceTree = "<group>"; };
 		02F4E8C32771C07500D89C19 /* SaveCustomRpcBrowseDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveCustomRpcBrowseDataController.swift; sourceTree = "<group>"; };
+		0B5A03D1E5E417FE79607D0F /* Pods_AlphaWallet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlphaWallet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		120A2B8C48180E93DBCCC2EE /* Pods-AlphaWalletUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlphaWalletUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AlphaWalletUITests/Pods-AlphaWalletUITests.release.xcconfig"; sourceTree = "<group>"; };
 		290B2B551F8F50030053C83E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		290B2B5E1F9177860053C83E /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
@@ -1123,7 +1145,7 @@
 		290B2B691F92C0440053C83E /* ConfigTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigTests.swift; sourceTree = "<group>"; };
 		290B2B6B1F92C35B0053C83E /* RPCServerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPCServerTests.swift; sourceTree = "<group>"; };
 		290B2B6D1F92C3980053C83E /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
-		2912CCF51F6A830700C6CBE3 /* Keyoro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Keyoro.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2912CCF51F6A830700C6CBE3 /* AlphaWallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlphaWallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2912CCF81F6A830700C6CBE3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2912CD011F6A830700C6CBE3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2912CD061F6A830700C6CBE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
@@ -1345,6 +1367,7 @@
 		5E7C710FD4CF798DEAC11F83 /* WhatsNewListingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhatsNewListingViewController.swift; sourceTree = "<group>"; };
 		5E7C7117B1DF438E213B406A /* History.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
 		5E7C712F42374C0B8DF8C64F /* BrowserHistoryCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrowserHistoryCellViewModel.swift; sourceTree = "<group>"; };
+		5E7C714BB4A095BE99B18F7A /* BlockscanChat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlockscanChat.swift; sourceTree = "<group>"; };
 		5E7C715BBA7416942FDA8516 /* HistoriesViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoriesViewModel.swift; sourceTree = "<group>"; };
 		5E7C7171B802C0C2718EEED0 /* MyDappsViewControllerHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyDappsViewControllerHeaderView.swift; sourceTree = "<group>"; };
 		5E7C7177F1DDDDDDE020CB4D /* ChooseSendPrivateTransactionsProviderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseSendPrivateTransactionsProviderViewController.swift; sourceTree = "<group>"; };
@@ -1675,6 +1698,7 @@
 		5E7C7DC4B06C1A623788EEED /* WalletConnectSessionCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletConnectSessionCellViewModel.swift; sourceTree = "<group>"; };
 		5E7C7DCB0BDDD30D10130AE7 /* GetIsERC875Encode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetIsERC875Encode.swift; sourceTree = "<group>"; };
 		5E7C7DCF28B3F0342113E20E /* URLTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLTests.swift; sourceTree = "<group>"; };
+		5E7C7DD30D23ACDDA7995355 /* RemoteCounter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteCounter.swift; sourceTree = "<group>"; };
 		5E7C7DD409C330DA4033F504 /* Keystore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keystore.swift; sourceTree = "<group>"; };
 		5E7C7DD9C564F2C7DE435894 /* ConfirmSignMessageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmSignMessageTableViewCell.swift; sourceTree = "<group>"; };
 		5E7C7DDCCEDE8A14A9C49E4A /* TransactionRowViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionRowViewModel.swift; sourceTree = "<group>"; };
@@ -1742,7 +1766,6 @@
 		61DCE17C2001A7A20053939F /* RLPTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RLPTests.swift; sourceTree = "<group>"; };
 		61FC5ECE1FCFBAE500CCB12A /* EtherNumberFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EtherNumberFormatter.swift; sourceTree = "<group>"; };
 		61FC5ED01FCFBDEB00CCB12A /* EtherNumberFormatterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EtherNumberFormatterTests.swift; sourceTree = "<group>"; };
-		623453621FAA990C9997D554 /* Pods-Keyoro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Keyoro.release.xcconfig"; path = "Pods/Target Support Files/Pods-Keyoro/Pods-Keyoro.release.xcconfig"; sourceTree = "<group>"; };
 		664D11A02007D59F0041A0B0 /* EstimateGasRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstimateGasRequest.swift; sourceTree = "<group>"; };
 		732086B8201508690047F605 /* SplashCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashCoordinator.swift; sourceTree = "<group>"; };
 		732E0F4F2022716700B39C1F /* LockEnterPasscodeCoordinatorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockEnterPasscodeCoordinatorTest.swift; sourceTree = "<group>"; };
@@ -1808,7 +1831,7 @@
 		8703F66626135B330082EE25 /* ChartHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartHistory.swift; sourceTree = "<group>"; };
 		8703F66A26136A500082EE25 /* RenameWalletViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenameWalletViewController.swift; sourceTree = "<group>"; };
 		8703F686261461E40082EE25 /* RenameWalletViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenameWalletViewModel.swift; sourceTree = "<group>"; };
-		8703FBFD270366DA0062C416 /* KeyoroSafariExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = KeyoroSafariExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		8703FBFD270366DA0062C416 /* AlphaWalletSafariExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = AlphaWalletSafariExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		8703FBFF270366DA0062C416 /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
 		8703FC02270366DA0062C416 /* _locales */ = {isa = PBXFileReference; lastKnownFileType = folder; path = _locales; sourceTree = "<group>"; };
 		8703FC04270366DA0062C416 /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
@@ -1935,11 +1958,12 @@
 		877D00AE25ADF60A008E22CC /* TransactionConfiguratorTransactionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionConfiguratorTransactionsTests.swift; sourceTree = "<group>"; };
 		8780FDAC27BF883F00BBE9DD /* ActivityOrTransactionInstance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityOrTransactionInstance.swift; sourceTree = "<group>"; };
 		8780FDAE27BF887700BBE9DD /* ActivitiesFilterStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesFilterStrategy.swift; sourceTree = "<group>"; };
+		8780FDBE27C3CC0F00BBE9DD /* ChangeSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeSet.swift; sourceTree = "<group>"; };
 		8782035C2431E66600792F12 /* FilterTokensCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterTokensCoordinator.swift; sourceTree = "<group>"; };
 		8782035E2431FBC300792F12 /* ShowAddHideTokensViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowAddHideTokensViewModel.swift; sourceTree = "<group>"; };
 		87897B9B25EF7C08006E3C75 /* ShowSeedPhraseIntroductionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowSeedPhraseIntroductionViewController.swift; sourceTree = "<group>"; };
 		87897B9D25EF7C50006E3C75 /* ShowSeedPhraseIntroductionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowSeedPhraseIntroductionViewModel.swift; sourceTree = "<group>"; };
-		878EE8EB255ADA49000210DE /* KeyoroShare.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = KeyoroShare.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		878EE8EB255ADA49000210DE /* AlphaWalletShare.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = AlphaWalletShare.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		878EE8ED255ADA49000210DE /* ShareContextHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareContextHandler.swift; sourceTree = "<group>"; };
 		878EE8F2255ADA49000210DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		878EE8FA255AE20A000210DE /* AlphaWalletShare.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AlphaWalletShare.entitlements; sourceTree = "<group>"; };
@@ -2089,13 +2113,11 @@
 		AA4E531720425A9500143A09 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		AA893ED4203C3E5400CDCED1 /* TokenBalance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenBalance.swift; sourceTree = "<group>"; };
 		AAEF2CAA2050A68A0038BE0D /* SignatureHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignatureHelper.swift; sourceTree = "<group>"; };
-		B16FC5C167139EA6FD8F60DF /* Pods-Keyoro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Keyoro.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Keyoro/Pods-Keyoro.debug.xcconfig"; sourceTree = "<group>"; };
 		B1CCA9D1215B615A0000FBF7 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 		B1CCA9D2215B61620000FBF7 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
 		B9F84D10470B22C957A61EAE /* Pods-AlphaWalletTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlphaWalletTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AlphaWalletTests/Pods-AlphaWalletTests.debug.xcconfig"; sourceTree = "<group>"; };
 		BB5D6A9D20232EE8000FC5AB /* CurrencyRate+Fee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrencyRate+Fee.swift"; sourceTree = "<group>"; };
 		BBF4F9B62029D0B2009E04C0 /* GasViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GasViewModel.swift; sourceTree = "<group>"; };
-		BE4245E21F26A0395BCD444A /* Pods_Keyoro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Keyoro.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C601B18624407D3A00C763D9 /* SettingViewHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewHeader.swift; sourceTree = "<group>"; };
 		C601B18724407D3B00C763D9 /* SettingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingTableViewCell.swift; sourceTree = "<group>"; };
 		C601B18C24407F4300C763D9 /* SettingTableViewCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingTableViewCellViewModel.swift; sourceTree = "<group>"; };
@@ -2127,6 +2149,25 @@
 		CCA4FE371FD428B300749AE4 /* JailbreakChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JailbreakChecker.swift; sourceTree = "<group>"; };
 		CCA4FE391FD42B4100749AE4 /* FakeJailbreakChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeJailbreakChecker.swift; sourceTree = "<group>"; };
 		CCCD74FC1FD2D38D004A087D /* CheckDeviceCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckDeviceCoordinator.swift; sourceTree = "<group>"; };
+		D364679327CD1EF900A145B5 /* KeyoroDeeplinkHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyoroDeeplinkHelper.swift; sourceTree = "<group>"; };
+		D364679627CD1EF900A145B5 /* FloatingSwitchSegment.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FloatingSwitchSegment.xib; sourceTree = "<group>"; };
+		D364679727CD1EF900A145B5 /* FloatingSwitchSegment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatingSwitchSegment.swift; sourceTree = "<group>"; };
+		D364679827CD1EF900A145B5 /* FloatingSwitchView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FloatingSwitchView.xib; sourceTree = "<group>"; };
+		D364679927CD1EF900A145B5 /* FloatingSwitchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatingSwitchView.swift; sourceTree = "<group>"; };
+		D364679B27CD1EF900A145B5 /* SideMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SideMenu.h; sourceTree = "<group>"; };
+		D364679C27CD1EF900A145B5 /* UIViewController+SideMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+SideMenu.swift"; sourceTree = "<group>"; };
+		D364679D27CD1EF900A145B5 /* StatusBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusBar.swift; sourceTree = "<group>"; };
+		D364679E27CD1EF900A145B5 /* Preferences.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
+		D364679F27CD1EF900A145B5 /* Delegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Delegate.swift; sourceTree = "<group>"; };
+		D36467A027CD1EF900A145B5 /* TransitionContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionContext.swift; sourceTree = "<group>"; };
+		D36467A127CD1EF900A145B5 /* UIViewController+Container.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Container.swift"; sourceTree = "<group>"; };
+		D36467A227CD1EF900A145B5 /* Segue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Segue.swift; sourceTree = "<group>"; };
+		D36467A327CD1EF900A145B5 /* UIView+Container.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Container.swift"; sourceTree = "<group>"; };
+		D36467A427CD1EF900A145B5 /* SideMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuController.swift; sourceTree = "<group>"; };
+		D36467A527CD1EF900A145B5 /* BasicTransitionAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicTransitionAnimator.swift; sourceTree = "<group>"; };
+		D36467A627CD1EF900A145B5 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		D36467A727CD1EF900A145B5 /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		D3C5AD4227D2362500381280 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "AlphaWallet/Peli/GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		E36AB2DC7832A980726A4AB1 /* Pods_AlphaWalletTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlphaWalletTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAC6758527A096EC009C3344 /* fi */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = fi; path = fi.lproj/privacyPolicy.html; sourceTree = "<group>"; };
 		EAC6758627A096EC009C3344 /* fi */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = fi; path = fi.lproj/termsOfService.html; sourceTree = "<group>"; };
@@ -2144,7 +2185,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8717D37327B2947000FB789D /* WalletConnect in Frameworks */,
-				4FB5504792C0D3F28F0F5976 /* Pods_Keyoro.framework in Frameworks */,
+				2A669F5585899E890EF26C57 /* Pods_AlphaWallet.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2254,10 +2295,10 @@
 		2912CCF61F6A830700C6CBE3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2912CCF51F6A830700C6CBE3 /* Keyoro.app */,
+				2912CCF51F6A830700C6CBE3 /* AlphaWallet.app */,
 				2912CD0B1F6A830700C6CBE3 /* AlphaWalletTests.xctest */,
-				878EE8EB255ADA49000210DE /* KeyoroShare.appex */,
-				8703FBFD270366DA0062C416 /* KeyoroSafariExtension.appex */,
+				878EE8EB255ADA49000210DE /* AlphaWalletShare.appex */,
+				8703FBFD270366DA0062C416 /* AlphaWalletSafariExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -2265,6 +2306,7 @@
 		2912CCF71F6A830700C6CBE3 /* AlphaWallet */ = {
 			isa = PBXGroup;
 			children = (
+				D364679227CD1EF900A145B5 /* Peli */,
 				87AB4250276755400099DF9F /* WebImage */,
 				87741F1B2770C3AD007F4604 /* WhereAreMyTokens */,
 				87D5BBD82727D9B20053E6D2 /* API.swift */,
@@ -2322,6 +2364,7 @@
 				5E7C7651253551EB14A26F7C /* Donations */,
 				5E7C7F1CC5699A58ED5D4E74 /* WhatsNew */,
 				5E7C74F0A1BB877A6FE35F37 /* FiatOnRamp */,
+				5E7C76487E444E00B78BAA14 /* BlockscanChat */,
 			);
 			path = AlphaWallet;
 			sourceTree = "<group>";
@@ -3264,6 +3307,7 @@
 				87FB0A8126D8D307000EC15F /* TokenProviderType.swift */,
 				87CC3852273E7980005BE9B8 /* eip155URLDecoder.swift */,
 				87D6E5DE2791934D00B9DEE3 /* DeepLink.swift */,
+				8780FDBE27C3CC0F00BBE9DD /* ChangeSet.swift */,
 			);
 			path = Types;
 			sourceTree = "<group>";
@@ -3785,6 +3829,15 @@
 			path = TokenScriptClient;
 			sourceTree = "<group>";
 		};
+		5E7C76487E444E00B78BAA14 /* BlockscanChat */ = {
+			isa = PBXGroup;
+			children = (
+				5E7C714BB4A095BE99B18F7A /* BlockscanChat.swift */,
+				5E7C7DD30D23ACDDA7995355 /* RemoteCounter.swift */,
+			);
+			path = BlockscanChat;
+			sourceTree = "<group>";
+		};
 		5E7C7651253551EB14A26F7C /* Donations */ = {
 			isa = PBXGroup;
 			children = (
@@ -4278,9 +4331,9 @@
 			isa = PBXGroup;
 			children = (
 				C846409321B6DFA200031CA2 /* libxslt.tbd */,
+				0B5A03D1E5E417FE79607D0F /* Pods_AlphaWallet.framework */,
 				E36AB2DC7832A980726A4AB1 /* Pods_AlphaWalletTests.framework */,
 				7BEDA1C4253B796085A0E66C /* Pods_AlphaWalletUITests.framework */,
-				BE4245E21F26A0395BCD444A /* Pods_Keyoro.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -5040,8 +5093,6 @@
 				4E16B6D97BD699F844AB4E2B /* Pods-AlphaWalletTests.release.xcconfig */,
 				C825940EC6CB472A443A7997 /* Pods-AlphaWalletUITests.debug.xcconfig */,
 				120A2B8C48180E93DBCCC2EE /* Pods-AlphaWalletUITests.release.xcconfig */,
-				B16FC5C167139EA6FD8F60DF /* Pods-Keyoro.debug.xcconfig */,
-				623453621FAA990C9997D554 /* Pods-Keyoro.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -5143,12 +5194,62 @@
 			path = Coordinators;
 			sourceTree = "<group>";
 		};
+		D364679227CD1EF900A145B5 /* Peli */ = {
+			isa = PBXGroup;
+			children = (
+				D364679327CD1EF900A145B5 /* KeyoroDeeplinkHelper.swift */,
+				D364679427CD1EF900A145B5 /* Libraries */,
+				D36467A627CD1EF900A145B5 /* Main.storyboard */,
+				D36467A727CD1EF900A145B5 /* MainTabBarController.swift */,
+				D3C5AD4227D2362500381280 /* GoogleService-Info.plist */,
+			);
+			path = Peli;
+			sourceTree = "<group>";
+		};
+		D364679427CD1EF900A145B5 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				D364679527CD1EF900A145B5 /* FloatingSwitch */,
+				D364679A27CD1EF900A145B5 /* SideMenu */,
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+		D364679527CD1EF900A145B5 /* FloatingSwitch */ = {
+			isa = PBXGroup;
+			children = (
+				D364679627CD1EF900A145B5 /* FloatingSwitchSegment.xib */,
+				D364679727CD1EF900A145B5 /* FloatingSwitchSegment.swift */,
+				D364679827CD1EF900A145B5 /* FloatingSwitchView.xib */,
+				D364679927CD1EF900A145B5 /* FloatingSwitchView.swift */,
+			);
+			path = FloatingSwitch;
+			sourceTree = "<group>";
+		};
+		D364679A27CD1EF900A145B5 /* SideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				D364679B27CD1EF900A145B5 /* SideMenu.h */,
+				D364679C27CD1EF900A145B5 /* UIViewController+SideMenu.swift */,
+				D364679D27CD1EF900A145B5 /* StatusBar.swift */,
+				D364679E27CD1EF900A145B5 /* Preferences.swift */,
+				D364679F27CD1EF900A145B5 /* Delegate.swift */,
+				D36467A027CD1EF900A145B5 /* TransitionContext.swift */,
+				D36467A127CD1EF900A145B5 /* UIViewController+Container.swift */,
+				D36467A227CD1EF900A145B5 /* Segue.swift */,
+				D36467A327CD1EF900A145B5 /* UIView+Container.swift */,
+				D36467A427CD1EF900A145B5 /* SideMenuController.swift */,
+				D36467A527CD1EF900A145B5 /* BasicTransitionAnimator.swift */,
+			);
+			path = SideMenu;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2912CCF41F6A830700C6CBE3 /* Keyoro */ = {
+		2912CCF41F6A830700C6CBE3 /* AlphaWallet */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2912CD1F1F6A830700C6CBE3 /* Build configuration list for PBXNativeTarget "Keyoro" */;
+			buildConfigurationList = 2912CD1F1F6A830700C6CBE3 /* Build configuration list for PBXNativeTarget "AlphaWallet" */;
 			buildPhases = (
 				7C3903F7FBE1023CAA5AED0C /* [CP] Check Pods Manifest.lock */,
 				87D5BBC12727CBB70053E6D2 /* Apollo */,
@@ -5168,12 +5269,12 @@
 				878EE8F4255ADA49000210DE /* PBXTargetDependency */,
 				8703FC14270366DA0062C416 /* PBXTargetDependency */,
 			);
-			name = Keyoro;
+			name = AlphaWallet;
 			packageProductDependencies = (
 				8717D37227B2947000FB789D /* WalletConnect */,
 			);
 			productName = etherwallet;
-			productReference = 2912CCF51F6A830700C6CBE3 /* Keyoro.app */;
+			productReference = 2912CCF51F6A830700C6CBE3 /* AlphaWallet.app */;
 			productType = "com.apple.product-type.application";
 		};
 		2912CD0A1F6A830700C6CBE3 /* AlphaWalletTests */ = {
@@ -5197,9 +5298,9 @@
 			productReference = 2912CD0B1F6A830700C6CBE3 /* AlphaWalletTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		8703FBFC270366DA0062C416 /* KeyoroSafariExtension */ = {
+		8703FBFC270366DA0062C416 /* AlphaWalletSafariExtension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8703FC18270366DA0062C416 /* Build configuration list for PBXNativeTarget "KeyoroSafariExtension" */;
+			buildConfigurationList = 8703FC18270366DA0062C416 /* Build configuration list for PBXNativeTarget "AlphaWalletSafariExtension" */;
 			buildPhases = (
 				8703FBF9270366DA0062C416 /* Sources */,
 				8703FBFA270366DA0062C416 /* Frameworks */,
@@ -5209,14 +5310,14 @@
 			);
 			dependencies = (
 			);
-			name = KeyoroSafariExtension;
+			name = AlphaWalletSafariExtension;
 			productName = AlphaWalletSafariExtension;
-			productReference = 8703FBFD270366DA0062C416 /* KeyoroSafariExtension.appex */;
+			productReference = 8703FBFD270366DA0062C416 /* AlphaWalletSafariExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
-		878EE8EA255ADA49000210DE /* KeyoroShare */ = {
+		878EE8EA255ADA49000210DE /* AlphaWalletShare */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 878EE8F9255ADA49000210DE /* Build configuration list for PBXNativeTarget "KeyoroShare" */;
+			buildConfigurationList = 878EE8F9255ADA49000210DE /* Build configuration list for PBXNativeTarget "AlphaWalletShare" */;
 			buildPhases = (
 				878EE8E7255ADA49000210DE /* Sources */,
 				878EE8E8255ADA49000210DE /* Frameworks */,
@@ -5226,9 +5327,9 @@
 			);
 			dependencies = (
 			);
-			name = KeyoroShare;
+			name = AlphaWalletShare;
 			productName = AlphaWalletShare;
-			productReference = 878EE8EB255ADA49000210DE /* KeyoroShare.appex */;
+			productReference = 878EE8EB255ADA49000210DE /* AlphaWalletShare.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
@@ -5302,10 +5403,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2912CCF41F6A830700C6CBE3 /* Keyoro */,
+				2912CCF41F6A830700C6CBE3 /* AlphaWallet */,
 				2912CD0A1F6A830700C6CBE3 /* AlphaWalletTests */,
-				878EE8EA255ADA49000210DE /* KeyoroShare */,
-				8703FBFC270366DA0062C416 /* KeyoroSafariExtension */,
+				878EE8EA255ADA49000210DE /* AlphaWalletShare */,
+				8703FBFC270366DA0062C416 /* AlphaWalletSafariExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -5328,11 +5429,14 @@
 				613D04891FDE15F8008DE72E /* COMODO ECC Domain Validation Secure Server CA 2.cer in Resources */,
 				C887C53A2057B703005ACF81 /* termsOfService.html in Resources */,
 				C876FF7D204A79D300B7D0EA /* SourceSansPro-Bold.otf in Resources */,
+				D36467B727CD1EF900A145B5 /* Main.storyboard in Resources */,
 				C880330D2054371500D73D6F /* non_asset_catalog_redemption_location@2x.png in Resources */,
 				771AA966200D5F1900D25403 /* WordCollectionViewCell.xib in Resources */,
 				87B93B112726C59D00F6EA73 /* BrowserStorageSubscription.js in Resources */,
 				87B93B102726C59D00F6EA73 /* config.js in Resources */,
 				C88033122055034E00D73D6F /* sellInfo.html in Resources */,
+				D36467AB27CD1EF900A145B5 /* FloatingSwitchView.xib in Resources */,
+				D36467A927CD1EF900A145B5 /* FloatingSwitchSegment.xib in Resources */,
 				C868C536205409160059672B /* redeemInfo.html in Resources */,
 				C876FF7A204A79D300B7D0EA /* SIL Open Font License.txt in Resources */,
 				C880330C2054371500D73D6F /* non_asset_catalog_redemption_location.png in Resources */,
@@ -5353,6 +5457,7 @@
 				02425FB327852B85007ECF94 /* chains.zip in Resources */,
 				5E7C7F808D0B0B19ECEA6623 /* ETH.tsml in Resources */,
 				5E7C706322B52C0D0CED8018 /* aETH.tsml in Resources */,
+				D3C5AD4327D2362500381280 /* GoogleService-Info.plist in Resources */,
 				5E7C7CE29C74DF7FDDDB6A0D /* ERC721-TokenScript.tsml in Resources */,
 				5E7C7E1C2976FA57D53BC2CE /* ERC1155.json in Resources */,
 			);
@@ -5431,7 +5536,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Keyoro-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-AlphaWallet-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -5462,7 +5567,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Keyoro/Pods-Keyoro-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-AlphaWallet/Pods-AlphaWallet-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/APIKit/APIKit.framework",
 				"${BUILT_PRODUCTS_DIR}/AWSCore/AWSCore.framework",
 				"${BUILT_PRODUCTS_DIR}/AWSSNS/AWSSNS.framework",
@@ -5601,7 +5706,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Keyoro/Pods-Keyoro-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AlphaWallet/Pods-AlphaWallet-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B9BFDC7DC85DA6429538E02B /* [CP] Embed Pods Frameworks */ = {
@@ -5678,7 +5783,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Keyoro/Pods-Keyoro-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-AlphaWallet/Pods-AlphaWallet-resources.sh",
 				"${PODS_CONFIGURATION_BUILD_DIR}/AlphaWalletWeb3Provider/AlphaWalletWeb3Provider.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
@@ -5687,7 +5792,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Keyoro/Pods-Keyoro-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AlphaWallet/Pods-AlphaWallet-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -5760,6 +5865,7 @@
 				29F114F01FA6D53700114A29 /* ImportSelectionType.swift in Sources */,
 				AA893ED5203C3E5400CDCED1 /* TokenBalance.swift in Sources */,
 				29850D251F6B27A800791A49 /* R.generated.swift in Sources */,
+				8780FDBF27C3CC0F00BBE9DD /* ChangeSet.swift in Sources */,
 				87012F462797FA97002BCDF0 /* SelfResizableCollectionView.swift in Sources */,
 				737D1675202BDCB400B42DDE /* UINavigationController.swift in Sources */,
 				AA4E531820425A9500143A09 /* Date.swift in Sources */,
@@ -5784,6 +5890,7 @@
 				2959961F1FAE759700DB66A8 /* RawTransaction.swift in Sources */,
 				87E2555824F52EBF00F025F7 /* GasSpeedTableViewCellViewModel.swift in Sources */,
 				025F5D202760C76A00B2A3BC /* ExportJsonKeystorePasswordView.swift in Sources */,
+				D36467AD27CD1EF900A145B5 /* UIViewController+SideMenu.swift in Sources */,
 				296421991F70C1F900EB363B /* EmptyView.swift in Sources */,
 				8728FFE527429967008E5524 /* TokensCardCollectionViewControllerViewModel.swift in Sources */,
 				8795994A2604A5B6006722B2 /* CoinTickersFetcher.swift in Sources */,
@@ -5838,6 +5945,7 @@
 				29F1C85A20036968003780D8 /* HelpUsCoordinator.swift in Sources */,
 				8728FFEA2743CAA7008E5524 /* TokenCardSelectionSectionHeaderView.swift in Sources */,
 				AA26C61F20412A1E00318B9B /* TokensCardViewController.swift in Sources */,
+				D36467B327CD1EF900A145B5 /* Segue.swift in Sources */,
 				87A3020B24BF04B6000DF32E /* TransactionInProgressViewModel.swift in Sources */,
 				29D72A2A1F6A8D1500CE9209 /* AppCoordinator.swift in Sources */,
 				293E626F1FA2ED1400CB0A66 /* InCoordinator.swift in Sources */,
@@ -5869,6 +5977,7 @@
 				7721A6C8202EF81B004DB16C /* CustomRPC.swift in Sources */,
 				874D099625EE33B600A58EF2 /* ScrollableStackView.swift in Sources */,
 				29E9CFCD1FE7343C00017744 /* NewTokenViewModel.swift in Sources */,
+				D36467B127CD1EF900A145B5 /* TransitionContext.swift in Sources */,
 				299B5E421FD2298E0051361C /* ConfigureTransactionViewController.swift in Sources */,
 				02D8BF89277D56F700EEE8E9 /* SaveCustomRpcManualEntryViewModel.swift in Sources */,
 				294DFBA31FE0E2EA004CEB56 /* TransactionValue.swift in Sources */,
@@ -5955,6 +6064,7 @@
 				291F52BF1F6C874E00B369AB /* AccountsViewController.swift in Sources */,
 				2963B6AF1F9823E6003063C1 /* UnconfirmedTransaction.swift in Sources */,
 				87D5BBD72727D69E0053E6D2 /* EnjinProvider.swift in Sources */,
+				D36467AF27CD1EF900A145B5 /* Preferences.swift in Sources */,
 				2996F1431F6C96FF005C33AE /* ImportWalletViewModel.swift in Sources */,
 				291ED08D1F6F5F0A00E7E93A /* KeyStoreError.swift in Sources */,
 				296AF9A31F733AB30058AF78 /* WalletCoordinator.swift in Sources */,
@@ -6019,6 +6129,7 @@
 				879F184F26E73ECB000602F2 /* TransferTokenBatchCardsViaWalletAddressViewController.swift in Sources */,
 				87BB63DE265E21C900FF702A /* WalletSummary.swift in Sources */,
 				5E7C78B3FD5CA87E395E1861 /* OnboardingPageStyle.swift in Sources */,
+				D36467AA27CD1EF900A145B5 /* FloatingSwitchSegment.swift in Sources */,
 				5E7C797BE2C8DB7EF6F217B3 /* OnboardingPage.swift in Sources */,
 				87ED8FA92488E4430005C69B /* SendViewSectionHeader.swift in Sources */,
 				5E7C76F8CB67466725C590CE /* FungibleTokenViewCellViewModel.swift in Sources */,
@@ -6131,6 +6242,7 @@
 				87BBF9872563DD7600FF4846 /* WalletConnectSessionDetailsViewModel.swift in Sources */,
 				025F5D162760C73300B2A3BC /* ExportJsonKeystorePasswordViewModel.swift in Sources */,
 				5E7C79DE8864702C51C0A7CC /* ResultResult.swift in Sources */,
+				D36467AC27CD1EF900A145B5 /* FloatingSwitchView.swift in Sources */,
 				87CDD49025F100AE0009B6AC /* Array.swift in Sources */,
 				87574A3025E7D41E00CAA0BB /* AnalyticsService.swift in Sources */,
 				5E7C7AE2EF04A23EC7C5ADFD /* ImportMagicTokenViewController.swift in Sources */,
@@ -6174,6 +6286,7 @@
 				5E7C77BFA252C7AA63BA5B90 /* TokenCardRowView.swift in Sources */,
 				87C650C325F2408E007B02CB /* ServerUnavailableCoordinator.swift in Sources */,
 				5E7C7DCE5242D2AC0A8DA65C /* TokenCardRowViewModel.swift in Sources */,
+				D36467B527CD1EF900A145B5 /* SideMenuController.swift in Sources */,
 				879E1E40264BDD5C006CD362 /* TokenHistoryChartView.swift in Sources */,
 				87E2555424F52E9500F025F7 /* GasSpeedTableViewHeaderView.swift in Sources */,
 				5E7C74C1C2AB84F9AFAC630E /* TokenCardRowViewModelProtocol.swift in Sources */,
@@ -6182,6 +6295,7 @@
 				874D099825EE33E000A58EF2 /* SelfResizedTextView.swift in Sources */,
 				5E7C708D05DBC08C8304F274 /* GetIsERC875Encode.swift in Sources */,
 				8769BCA8256D15BF0095EA5B /* BlockieImageView.swift in Sources */,
+				D36467B827CD1EF900A145B5 /* MainTabBarController.swift in Sources */,
 				8769888D24C6ED04002BF62B /* TransactionInProgressCoordinator.swift in Sources */,
 				5E7C7F95F75D39673B88D774 /* GetERC721BalanceEncode.swift in Sources */,
 				5E7C7CDE2814481CD7BC47AC /* PushNotificationsCoordinator.swift in Sources */,
@@ -6379,6 +6493,7 @@
 				5E7C71145CE952518B3EECE3 /* AccountViewTableSectionHeader.swift in Sources */,
 				5E7C7D1EE18AC83D633A6749 /* EnterPasswordCoordinator.swift in Sources */,
 				5E7C793BF142AEC0792A68C3 /* BackupSeedPhraseCoordinator.swift in Sources */,
+				D36467B227CD1EF900A145B5 /* UIViewController+Container.swift in Sources */,
 				5E7C7FE1E7806D33001F9867 /* ShowSeedPhraseViewController.swift in Sources */,
 				5E7C75F1B2340BB6AA86A2EE /* ShowSeedPhraseViewModel.swift in Sources */,
 				5E7C7A4700C79350AA486E09 /* SeedPhraseCell.swift in Sources */,
@@ -6418,6 +6533,7 @@
 				8728FFD727428F29008E5524 /* Erc875NonFungibleRowViewModel.swift in Sources */,
 				87D163A3242CD811002662D2 /* AddHideTokensViewController.swift in Sources */,
 				5E7C70F407FBA1BD69901861 /* SecureEnclave.swift in Sources */,
+				D36467AE27CD1EF900A145B5 /* StatusBar.swift in Sources */,
 				5E7C7CF6B5C96376B7BF382B /* ElevateWalletSecurityCoordinator.swift in Sources */,
 				5E7C7F53A21D1D0FE576DD8F /* ElevateWalletSecurityViewController.swift in Sources */,
 				5E7C743467F5D428AF4E4F0F /* ElevateWalletSecurityViewModel.swift in Sources */,
@@ -6459,6 +6575,7 @@
 				5E7C7D918B514B4C2F8DF296 /* EventSourceCoordinator.swift in Sources */,
 				5E7C733C6C4DD52495427B66 /* EventsDataStore.swift in Sources */,
 				5E7C797F3278A290BE47BFA2 /* TokenIdOrEvent.swift in Sources */,
+				D36467B627CD1EF900A145B5 /* BasicTransitionAnimator.swift in Sources */,
 				5E7C7193C577A84710D71F5C /* TokenScriptFilterParser.swift in Sources */,
 				5E7C708F30E73521E6A494D5 /* TokenScriptSelection.swift in Sources */,
 				5E7C710D1522AFA533B0C22B /* XMLHandler+XPaths.swift in Sources */,
@@ -6516,6 +6633,7 @@
 				5E7C78C68AD1922796E6C88F /* WalletConnectSessionsViewController.swift in Sources */,
 				5E7C78C511CD388E882DBD83 /* WalletConnectSessionCell.swift in Sources */,
 				8757E5E025DE5A9D00812392 /* WalletConnectToSessionViewController.swift in Sources */,
+				D36467A827CD1EF900A145B5 /* KeyoroDeeplinkHelper.swift in Sources */,
 				5E7C712B11D9D9AAA02C022F /* WalletConnectSessionCellViewModel.swift in Sources */,
 				5E7C7B3027F3A56EF3EE5B7F /* EthCalllRequest.swift in Sources */,
 				5E7C7E38EE25F8837CDF6875 /* TransactionRowViewModel.swift in Sources */,
@@ -6562,6 +6680,7 @@
 				5E7C72647EAE29158D103377 /* Erc1155TokenIdsFetcher.swift in Sources */,
 				5E7C78B576BC9A187445B002 /* DappRequestSwitchExistingChainCoordinator.swift in Sources */,
 				5E7C71628CC710DE80590FF0 /* WalletQrCodeDonation.swift in Sources */,
+				D36467B027CD1EF900A145B5 /* Delegate.swift in Sources */,
 				5E7C70EFC8EB462F10BA3913 /* ChooseSendPrivateTransactionsProviderViewController.swift in Sources */,
 				5E7C7DB7B431837C0D7031B1 /* ChooseSendPrivateTransactionsProviderViewModel.swift in Sources */,
 				5E7C77A652206E62A682D6EE /* SelectionTableViewCell.swift in Sources */,
@@ -6574,11 +6693,14 @@
 				02F4E8B627715EA000D89C19 /* SaveCustomRpcOverallViewController.swift in Sources */,
 				5E7C7CC1E06FFC3A5BEBF1EC /* WhatsNewViews.swift in Sources */,
 				5E7C71967C34DD3F207F8126 /* WhatsNewExperimentCoordinator.swift in Sources */,
+				D36467B427CD1EF900A145B5 /* UIView+Container.swift in Sources */,
 				5E7C7062A44AF416B110008A /* PingInfuraCoordinator.swift in Sources */,
 				5E7C788C6ACB6E5AA24216A6 /* FiatOnRampCoordinator.swift in Sources */,
 				5E7C7F62DA439F87F46D09C7 /* UnitConfiguration.swift in Sources */,
 				5E7C78772A59685C37CB99C2 /* ToolsViewController.swift in Sources */,
 				5E7C76AFBBACDD13BEF25DA9 /* ToolsViewModel.swift in Sources */,
+				5E7C7126E01D824557FD7731 /* BlockscanChat.swift in Sources */,
+				5E7C7B371C9A7BEC46D8633D /* RemoteCounter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -6702,17 +6824,17 @@
 /* Begin PBXTargetDependency section */
 		2912CD0D1F6A830700C6CBE3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2912CCF41F6A830700C6CBE3 /* Keyoro */;
+			target = 2912CCF41F6A830700C6CBE3 /* AlphaWallet */;
 			targetProxy = 2912CD0C1F6A830700C6CBE3 /* PBXContainerItemProxy */;
 		};
 		8703FC14270366DA0062C416 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 8703FBFC270366DA0062C416 /* KeyoroSafariExtension */;
+			target = 8703FBFC270366DA0062C416 /* AlphaWalletSafariExtension */;
 			targetProxy = 8703FC13270366DA0062C416 /* PBXContainerItemProxy */;
 		};
 		878EE8F4255ADA49000210DE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 878EE8EA255ADA49000210DE /* KeyoroShare */;
+			target = 878EE8EA255ADA49000210DE /* AlphaWalletShare */;
 			targetProxy = 878EE8F3255ADA49000210DE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -6921,7 +7043,7 @@
 		};
 		2912CD201F6A830700C6CBE3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B16FC5C167139EA6FD8F60DF /* Pods-Keyoro.debug.xcconfig */;
+			baseConfigurationReference = CA4F65A76A018D8DFF4A0314 /* Pods-AlphaWallet.debug.xcconfig */;
 			buildSettings = {
 				ALPHAWALLET_INFO_PLIST_FILE = AlphaWallet/Info.plist;
 				ALPHAWALLET_PRODUCT_BUNDLE_IDENTIFIER = com.stormbird.alphawallet;
@@ -6931,7 +7053,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 7;
+				CURRENT_PROJECT_VERSION = 417;
 				DEVELOPMENT_TEAM = K7754WBFRP;
 				ENABLE_BITCODE = YES;
 				HEADER_SEARCH_PATHS = (
@@ -6950,9 +7072,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.5.0;
+				MARKETING_VERSION = 3.34;
 				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" -D DEBUG";
-				PRODUCT_BUNDLE_IDENTIFIER = com.pelicantravel.keyoro2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.stormbird.alphawallet.test2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -6966,7 +7088,7 @@
 		};
 		2912CD211F6A830700C6CBE3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 623453621FAA990C9997D554 /* Pods-Keyoro.release.xcconfig */;
+			baseConfigurationReference = C6EE5EADD8373DB85ADD1966 /* Pods-AlphaWallet.release.xcconfig */;
 			buildSettings = {
 				ALPHAWALLET_INFO_PLIST_FILE = AlphaWallet/Info.plist;
 				ALPHAWALLET_PRODUCT_BUNDLE_IDENTIFIER = com.stormbird.alphawallet;
@@ -6976,7 +7098,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 7;
+				CURRENT_PROJECT_VERSION = 417;
 				DEVELOPMENT_TEAM = K7754WBFRP;
 				ENABLE_BITCODE = YES;
 				HEADER_SEARCH_PATHS = (
@@ -6995,8 +7117,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.5.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.pelicantravel.keyoro2;
+				MARKETING_VERSION = 3.34;
+				PRODUCT_BUNDLE_IDENTIFIER = com.stormbird.alphawallet.test2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -7085,7 +7207,7 @@
 					"-framework",
 					SafariServices,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.pelicantravel.keyoro.SafariExtension2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.stormbird.alphawallet.test2.AlphaWalletSafariExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -7122,7 +7244,7 @@
 					"-framework",
 					SafariServices,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.pelicantravel.keyoro.SafariExtension2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.stormbird.alphawallet.test2.AlphaWalletSafariExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -7153,7 +7275,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = NO;
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.pelicantravel.keyoro.Share2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.stormbird.alphawallet.test2.AlphaWalletShare;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -7182,7 +7304,7 @@
 				);
 				MARKETING_VERSION = 3.12;
 				MTL_FAST_MATH = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = com.pelicantravel.keyoro.Share2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.stormbird.alphawallet.test2.AlphaWalletShare;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -7203,7 +7325,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2912CD1F1F6A830700C6CBE3 /* Build configuration list for PBXNativeTarget "Keyoro" */ = {
+		2912CD1F1F6A830700C6CBE3 /* Build configuration list for PBXNativeTarget "AlphaWallet" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2912CD201F6A830700C6CBE3 /* Debug */,
@@ -7221,7 +7343,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8703FC18270366DA0062C416 /* Build configuration list for PBXNativeTarget "KeyoroSafariExtension" */ = {
+		8703FC18270366DA0062C416 /* Build configuration list for PBXNativeTarget "AlphaWalletSafariExtension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8703FC16270366DA0062C416 /* Debug */,
@@ -7230,7 +7352,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		878EE8F9255ADA49000210DE /* Build configuration list for PBXNativeTarget "KeyoroShare" */ = {
+		878EE8F9255ADA49000210DE /* Build configuration list for PBXNativeTarget "AlphaWalletShare" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				878EE8F7255ADA49000210DE /* Debug */,

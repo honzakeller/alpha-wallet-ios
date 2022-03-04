@@ -39,9 +39,9 @@ extension UITableView {
         register(reusable.self, forCellReuseIdentifier: reusable.reusableIdentifier)
     }
 
-    func dequeueReusableCell<T>(for indexPath: IndexPath) -> T where T: WithReusableIdentifier {
-        return dequeueReusableCell(withIdentifier: T.reusableIdentifier, for: indexPath) as! T
-    }
+//    func dequeueReusableCell<T>(for indexPath: IndexPath) -> T where T: WithReusableIdentifier {
+//        return dequeueReusableCell(withIdentifier: T.reusableIdentifier, for: indexPath) as! T
+//    }
 
     func dequeueReusableHeaderFooterView<T>() -> T where T: WithReusableIdentifier {
         return dequeueReusableHeaderFooterView(withIdentifier: T.reusableIdentifier) as! T
@@ -59,9 +59,9 @@ extension UICollectionView {
         register(reusable.self, forCellWithReuseIdentifier: reusable.reusableIdentifier)
     }
 
-    func dequeueReusableCell<T>(for indexPath: IndexPath) -> T where T: WithReusableIdentifier {
-        return dequeueReusableCell(withReuseIdentifier: T.reusableIdentifier, for: indexPath) as! T
-    }
+//    func dequeueReusableCell<T>(for indexPath: IndexPath) -> T where T: WithReusableIdentifier {
+//        return dequeueReusableCell(withReuseIdentifier: T.reusableIdentifier, for: indexPath) as! T
+//    }
 
     func dequeueReusableSupplementaryView<T>(ofKind elementKind: String, for indexPath: IndexPath) -> T where T: WithReusableIdentifier {
         dequeueReusableSupplementaryView(ofKind: elementKind, withReuseIdentifier: T.reusableIdentifier, for: indexPath) as! T

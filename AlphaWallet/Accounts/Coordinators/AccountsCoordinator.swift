@@ -269,18 +269,18 @@ extension AccountsCoordinator: WalletCoordinatorDelegate {
         } else {
             accountsViewController.configure(viewModel: .init(keystore: keystore, config: config, configuration: viewModel.configuration, analyticsCoordinator: analyticsCoordinator))
 
-            coordinator.navigationController.dismiss(animated: true)
+//            coordinator.navigationController.dismiss(animated: true)
             removeCoordinator(coordinator)
         }
     }
 
     func didFail(with error: Error, in coordinator: WalletCoordinator) {
-        coordinator.navigationController.dismiss(animated: true)
+//        coordinator.navigationController.dismiss(animated: true)
         removeCoordinator(coordinator)
     }
 
     func didCancel(in coordinator: WalletCoordinator) {
-        coordinator.navigationController.dismiss(animated: true)
+//        coordinator.navigationController.dismiss(animated: true)
         removeCoordinator(coordinator)
     }
 }

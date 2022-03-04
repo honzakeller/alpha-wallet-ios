@@ -95,6 +95,12 @@ public struct Constants {
     //xDai dapps
     static let xDaiBridge = URL(string: "https://bridge.xdaichain.com/")!
     static let arbitrumBridge = URL(string: "https://bridge.arbitrum.io/")!
+    
+    static let buyXDaiWithOnramperUrl = "https://widget.onramper.com?apiKey=\(Constants.Credentials.onramperApiKey)&color=5F4B8B&defaultCrypto=xDai"
+    static func buyWithOnramperUrl(asset: String) -> String {
+        "https://widget.onramper.com?apiKey=\(Constants.Credentials.onramperApiKey)&color=5F4B8B&defaultCrypto=\(asset)"
+    }
+    
     static let buyXDaiWitRampUrl = "https://buy.ramp.network/?hostApiKey=\(Constants.Credentials.rampApiKey)&hostLogoUrl=https%3A%2F%2Falphawallet.com%2Fwp-content%2Fthemes%2Falphawallet%2Fimg%2Falphawallet-logo.svg&hostAppName=AlphaWallet&swapAsset=xDai"
 
     static func buyWitRampUrl(asset: String) -> String {

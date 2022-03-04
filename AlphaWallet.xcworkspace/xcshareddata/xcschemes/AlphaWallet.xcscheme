@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1010"
+   LastUpgradeVersion = "1300"
    version = "1.7">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -15,8 +15,8 @@
                   <BuildableReference
                      BuildableIdentifier = "primary"
                      BlueprintIdentifier = "2912CCF41F6A830700C6CBE3"
-                     BuildableName = "Keyoro.app"
-                     BlueprintName = "Keyoro"
+                     BuildableName = "AlphaWallet.app"
+                     BlueprintName = "AlphaWallet"
                      ReferencedContainer = "container:AlphaWallet.xcodeproj">
                   </BuildableReference>
                </EnvironmentBuildable>
@@ -33,8 +33,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2912CCF41F6A830700C6CBE3"
-               BuildableName = "Keyoro.app"
-               BlueprintName = "Keyoro"
+               BuildableName = "AlphaWallet.app"
+               BlueprintName = "AlphaWallet"
                ReferencedContainer = "container:AlphaWallet.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -50,9 +50,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2912CD151F6A830700C6CBE3"
-               BuildableName = "AlphaWalletUITests.xctest"
-               BlueprintName = "AlphaWalletUITests"
+               BlueprintIdentifier = "2912CD0A1F6A830700C6CBE3"
+               BuildableName = "AlphaWalletTests.xctest"
+               BlueprintName = "AlphaWalletTests"
                ReferencedContainer = "container:AlphaWallet.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -73,8 +73,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2912CCF41F6A830700C6CBE3"
-            BuildableName = "Keyoro.app"
-            BlueprintName = "Keyoro"
+            BuildableName = "AlphaWallet.app"
+            BlueprintName = "AlphaWallet"
             ReferencedContainer = "container:AlphaWallet.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -118,8 +118,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2912CCF41F6A830700C6CBE3"
-            BuildableName = "Keyoro.app"
-            BlueprintName = "Keyoro"
+            BuildableName = "AlphaWallet.app"
+            BlueprintName = "AlphaWallet"
             ReferencedContainer = "container:AlphaWallet.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

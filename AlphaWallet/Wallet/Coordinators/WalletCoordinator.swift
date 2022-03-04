@@ -227,7 +227,7 @@ extension WalletCoordinator: WalletCoordinatorDelegate {
     }
 
     func didCancel(in coordinator: WalletCoordinator) {
-        coordinator.navigationController.dismiss(animated: true)
+//        coordinator.navigationController.dismiss(animated: true)
         removeCoordinator(coordinator)
     }
 }
