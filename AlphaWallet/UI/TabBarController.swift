@@ -34,7 +34,7 @@ class TabBarController: UITabBarController {
             nvc.delegate = self
         }
     }
-    
+
     override func motionBegan(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
         didShake?()
     }
